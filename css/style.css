@@ -375,6 +375,62 @@ body {
   color: white;
 }
 
+.c-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.c-about__outer-floater {
+  background-image: url(../img/about.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: red;
+  width: 400px;
+  height: 550px;
+  margin: 0 0 0 20rem;
+  padding: 1rem;
+  transform: translateY(40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.c-about__inner-floater {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+.c-about__inner-floater--title {
+  background-image: url(../img/about.jpg);
+  background-position: center;
+  background-size: cover;
+  font-size: 26rem;
+  font-weight: bold;
+  line-height: 26rem;
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.c-about__inner-floater--text {
+  text-transform: uppercase;
+  background-image: url(../img/about.jpg);
+  background-position: center;
+  background-size: cover;
+  font-size: 1.7rem;
+  font-weight: bold;
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.c-about__info {
+  width: 50%;
+}
+
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
