@@ -92,6 +92,10 @@ img:not([alt]) {
 /*------------------------------------*\
   #ELEMENTS
 \*------------------------------------*/
+body {
+  font-family: "Hind", sans-serif;
+}
+
 /*------------------------------------*\
   #OBJECTS
 \*------------------------------------*/
@@ -127,12 +131,14 @@ img:not([alt]) {
   #COMPONENTS
 \*------------------------------------*/
 .c-nav {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   /* Add a black background color to the top navigation */
-  background-color: #333;
   overflow: hidden;
   position: fixed;
   width: 100%;
   z-index: 999;
+  padding-top: 3rem;
   /* Style the links inside the navigation bar */
 }
 .c-nav__container {
@@ -141,23 +147,31 @@ img:not([alt]) {
   align-items: center;
   justify-content: space-between;
 }
+.c-nav__list {
+  margin-right: 10rem;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 300px;
+}
 .c-nav__link {
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 .c-nav__link:hover {
   /* Change the color of links on hover */
-  background-color: #ddd;
-  color: black;
+  color: #de6447;
 }
 .c-nav__link--active {
-  background-color: #4CAF50;
   color: white;
+}
+.c-nav__logo {
+  margin-left: 10rem;
 }
 .c-nav__logo img {
   max-height: 2rem;
@@ -302,10 +316,15 @@ av-icon3 span:nth-child(1) {
   height: 60vh;
   margin: 0 10rem 0 0;
   padding: 2rem;
+  transform: translateY(40px);
 }
 
 /*------------------------------------*\
   #UTILITIES
 \*------------------------------------*/
+u-line {
+  height: 2px;
+  width: 40px;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -5,11 +5,11 @@
 //Settings – used with preprocessors and contain font, colors definitions, etc.
 $font-size: 16px;
 
-$font-title: 'Montserrat', sans-serif;
-$font-body: 'Hind', sans-serif;
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Hind', sans-serif;
 
-$font-title: bold 3rem Montserrat, sans-serif;
-$font-body: normal 1rem Hind, sans-serif;
+// $font-primary: bold 3rem Montserrat, sans-serif;
+// $font-secondary: normal 1rem Hind, sans-serif;
 
 
 $width-100: 100vw;
@@ -42,3 +42,5 @@ $color-secondary: #de6447;
 $color-terciary: #00a084;
 
 $opacity-overlay: 0.4;
+
+$margins--desktop: 10rem;
