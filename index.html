@@ -11,6 +11,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">  
     <!-- STYLE -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- SCRIPT  -->
+    <script>
+        $(function() {
+            $.scrollify({
+            section : ".o-section",
+            sectionName : "section-name",
+            interstitialSection : "",
+            easing: "easeOutExpo",
+            scrollSpeed: 1100,
+            offset : 0,
+            scrollbars: true,
+            standardScrollElements: "",
+            setHeights: true,
+            overflowScroll: true,
+            updateHash: true,
+            touchScroll:true,
+            before:function() {},
+            after:function() {},
+            afterResize:function() {},
+            afterRender:function() {}
+        });
+        });
+      </script>
 </head>
 <body>
     <!-- sidebar navigation -->
@@ -51,7 +74,7 @@
     </nav>
 
     <!-- header  -->
-    <header class="o-section c-header">
+    <header class="o-section c-header" data-section-name="home">
         <div class="o-section__background c-header__background">
             <div class="o-section__overlay"></div>
             <div class="o-section__texture c-header__texture"></div>
@@ -69,14 +92,49 @@
         </div>
     </header>
 
-    <!-- about  -->
-    <!-- <section class="o-section c-about">
 
-    </section> -->
+    <!-- about  -->
+    <section class="o-section c-about" data-section-name="about">
+        <!-- floater  -->
+        <div class="c-about__outer-floater">
+            <div class="c-about__inner-floater">
+                <span class="c-about__floater-title">8</span>
+                <span class="c-about__floater-text">jaar ervaring</span>
+            </div>
+        </div>
+        
+        <!-- info  -->
+        <div class="c-about__info">
+            <div class="c-about__info-title">wij zijn <span>poortcentrum</span></div>
+            <div class="c-about__info-subtitle">aluminium bedrijf</div>
+            
+            <div>
+                <div class="u-line"></div>
+                <div class="u-line--short"></div>
+            </div>
+
+            <div class="c-about__info-content">
+                Wij zijn een klein familie bedrijf uit Aarschot. 
+                Sinds 2011 maken wij verschillende producten uit aluminium
+                op maat. Van poorten en terras overdekken tot 
+                carports en hekken.
+
+                <ul>
+                    <li>professioneel vakmanschap</li>
+                    <li>eerlijke prijzen</li>
+                    <li>ad minim venom, quis nostrud.</li>
+                </ul>
+
+                <a href="#">Ondek meer over ons</a>
+            </div>
+        </div>
+
+    </section>
 
     <!-- scripts  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/hamburger.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/jquery.scrollify.js"></script>
 </body>
 </html>

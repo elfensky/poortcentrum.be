@@ -151,12 +151,11 @@ body {
   justify-content: space-between;
 }
 .c-nav__list {
-  margin-right: 10rem;
-  width: 25%;
+  margin-right: 20rem;
+  width: 400px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  min-width: 300px;
 }
 .c-nav__link {
   float: left;
@@ -173,7 +172,7 @@ body {
   color: white;
 }
 .c-nav__logo {
-  margin-left: 10rem;
+  margin-left: 20rem;
   background-image: url(../img/logo--white.png);
   height: 2rem;
   display: flex;
@@ -335,18 +334,21 @@ body {
   background-image: url("../img/header.png");
 }
 .c-header__floater {
-  width: 25%;
-  min-width: 300px;
+  width: 400px;
   background-color: white;
-  height: 60vh;
-  margin: 0 10rem 0 0;
-  padding: 2rem;
+  height: 550px;
+  margin: 0 20rem 0 0;
+  padding: 3rem;
   transform: translateY(40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 .c-header__title {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 3vw;
+  font-size: 2.3rem;
   text-transform: uppercase;
 }
 .c-header__icon {
@@ -359,12 +361,18 @@ body {
   position: absolute;
   font-size: 0.75rem;
   bottom: 0;
-  transform: translate(-10px 0);
+  transform: translate(-5px, 2px);
 }
 .c-header__cta {
   padding: 0.25rem 1.5rem;
   border: 2px solid #1490D7;
   border-radius: 0.3rem;
+  color: black;
+}
+.c-header__cta:hover {
+  transition: 0.3s;
+  background-color: #1490D7;
+  color: white;
 }
 
 /*------------------------------------*\
