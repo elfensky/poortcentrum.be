@@ -1,0 +1,83 @@
+.c-nav{
+
+    /* Add a black background color to the top navigation */
+    background-color: #333;
+    overflow: hidden;
+    // position: fixed;
+    // opacity: 0.7;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+
+    &__container{
+        display: flex;
+        flex-direction: row;
+        // padding: 0 10rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+    // display: flex;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // width: 100%;
+    // z-index: 999;
+    // height: 6.25vh;
+
+    /* Style the links inside the navigation bar */
+    &__link{
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+
+        &:hover{
+            /* Change the color of links on hover */
+            background-color: #ddd;
+            color: black;
+        }
+
+        &--active{
+            background-color: #4CAF50;
+            color: white;
+        }
+    }
+    
+
+    &__logo{
+        // height: 1rem;
+
+        img{
+            max-height: 2rem;
+        }
+    }
+
+    &__icon{
+        font-size: 2rem;
+        display: none;
+    }
+
+    // &__list{
+    //     display: flex;
+    //     flex-direction: row;
+    // }
+
+    // &__item{
+
+    // }
+}
+
+@media screen and (max-width: 800px) {
+
+    .c-nav{
+        &__list{
+            display:none;
+        }
+        &__icon{
+            display: block;
+        }
+    }
+}

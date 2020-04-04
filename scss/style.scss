@@ -1,0 +1,45 @@
+/*------------------------------------*\
+  #SETTINGS
+\*------------------------------------*/
+@import 'settings';
+
+/*------------------------------------*\
+  #TOOLS 
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #GENERICS
+\*------------------------------------*/
+@import 'generics.reset';
+
+/*------------------------------------*\
+  #ELEMENTS
+\*------------------------------------*/
+@import 'elements';
+
+/*------------------------------------*\
+  #OBJECTS
+\*------------------------------------*/
+@import 'objects';
+
+/*------------------------------------*\
+  #COMPONENTS
+\*------------------------------------*/
+@import 'components.nav'; //navigation desktop
+@import 'components.sidenav'; //navigation mobile
+@import 'components.hamburger'; //animated hamburger icon
+@import 'components.header';
+@import 'components.about';
+// @import 'components.blog';
+// @import 'components.tours';
+// @import 'components.contact';
+// @import 'components.footer';
+
+//RESPONSIVE
+// @import 'components.responsive'; //desktop & tablet scaling
+// @import 'components.mobile'; //phones
+
+/*------------------------------------*\
+  #UTILITIES
+\*------------------------------------*/
+@import 'utilities';

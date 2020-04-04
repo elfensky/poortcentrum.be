@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "activate SASS @ screen.scss",
+            "label": "activate SASS @ style.scss",
             "type": "shell",
             "command": "sass --watch scss:css",
             "group": {

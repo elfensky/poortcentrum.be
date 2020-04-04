@@ -1,0 +1,19 @@
+.c-header{
+    // flex-direction: row;
+    // align-items: end;
+    justify-content: end;
+
+
+    &__texture{
+        background-image: url("../img/header.png");
+    }
+
+    &__floater{
+        width: 25%;
+        min-width: 300px;
+        background-color:white;
+        height: 60vh;
+        margin: 0 10rem 0 0;
+        padding: 2rem;
+    }
+}
