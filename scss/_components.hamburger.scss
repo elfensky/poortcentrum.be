@@ -1,9 +1,9 @@
 //HAMBURGER ICON
-#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
+.c-nav__icon{
     width: 60px;
     height: 45px;
     position: relative;
-    margin: 50px auto;
+    // margin: 50px auto;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -13,14 +13,18 @@
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
+
+    transform-origin:left;
+    transform: scale(0.6);
+    margin-left: 1rem;
 }
 
-#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+.c-nav__icon span {
     display: block;
     position: absolute;
-    height: 9px;
-    width: 100%;
-    background: #d3531a;
+    height: 8px;
+    width: 90%;
+    background: $color-primary;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -34,39 +38,40 @@
     transition: .25s ease-in-out;
 }
 
-av-icon3 span:nth-child(1) {
+.c-nav__icon span:nth-child(1) {
     top: 0px;
 }
 
-#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+.c-nav__icon span:nth-child(2),.c-nav__icon span:nth-child(3) {
     top: 18px;
+    background: black;
 }
 
-#nav-icon3 span:nth-child(4) {
+.c-nav__icon span:nth-child(4) {
     top: 36px;
 }
 
-#nav-icon3.open span:nth-child(1) {
+.c-nav__icon.open span:nth-child(1) {
     top: 18px;
     width: 0%;
     left: 50%;
 }
 
-#nav-icon3.open span:nth-child(2) {
+.c-nav__icon.open span:nth-child(2) {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
-#nav-icon3.open span:nth-child(3) {
+.c-nav__icon.open span:nth-child(3) {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 
-#nav-icon3.open span:nth-child(4) {
+.c-nav__icon.open span:nth-child(4) {
     top: 18px;
     width: 0%;
     left: 50%;
