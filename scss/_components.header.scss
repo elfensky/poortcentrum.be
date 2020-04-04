@@ -1,0 +1,49 @@
+.c-header{
+    // flex-direction: row;
+    // align-items: end;
+    justify-content: flex-end;
+
+
+    &__texture{
+        background-image: url("../img/header.png");
+    }
+
+    &__floater{
+        width: 25%;
+        min-width: 300px;
+        background-color:white;
+        height: 60vh;
+        margin: 0 $margins--desktop 0 0;
+        padding: 2rem;
+        transform: translateY(40px); //center accounting for nav
+    }
+
+    &__title{
+        font-family: $font-primary;
+        font-weight: 600;
+        font-size: 3vw;
+        text-transform: uppercase;
+    }
+
+    &__icon{
+        position: relative;
+        color: $color-primary;
+        border: 2px solid $color-primary;
+        // display: flex;
+        padding: 0.25rem 0.5rem;
+    }
+
+    &__number{
+        position: absolute;
+        font-size: 0.75rem;
+        bottom: 0;
+        // right: -20;
+        transform: translate(-10px 0);
+    }
+
+    &__cta{
+        padding: 0.25rem 1.5rem;
+        border: 2px solid $color-primary;
+        border-radius: 0.3rem;
+    }
+}

@@ -1,0 +1,46 @@
+//SETTINGS
+//only $variables come here. Fonts, Colors and other values. 
+//read more on https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
+
+//Settings – used with preprocessors and contain font, colors definitions, etc.
+$font-size: 16px;
+
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'Hind', sans-serif;
+
+// $font-primary: bold 3rem Montserrat, sans-serif;
+// $font-secondary: normal 1rem Hind, sans-serif;
+
+
+$width-100: 100vw;
+$width-75: 75vw;
+$width-1_2: 50vw;
+$width-1_4: 25vw;
+$width-1_8: 12.5vw;
+$width-1_16: 6.25vw;
+
+$height-100: 100vh;
+$height-75: 75vh;
+$height-1_2: 50vh;
+$height-1_4: 25vh;
+$height-1_8: 12.5vh;
+$height-1_16: 6.25vh;
+
+$black: 900;
+$extra-bold: 800;
+$bold: 700;
+$semi-bold: 600;
+$medium: 500;
+$regular: 400;
+$light: 300;
+$extra-light: 200;
+$thin: 100;
+
+$color-primary: #1490D7;
+// Squash Palette
+$color-secondary: #de6447;
+$color-terciary: #00a084;
+
+$opacity-overlay: 0.4;
+
+$margins--desktop: 10rem;
