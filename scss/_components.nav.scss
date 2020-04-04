@@ -20,11 +20,11 @@
     // Style the div containing the links inside navbar
     &__list{
         margin-right: $margins--desktop;
-        width: 25%;
+        width: $floater-width;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        min-width: 300px;
+        // min-width: 300px;
     }
 
     // Style the links inside the navigation bar
