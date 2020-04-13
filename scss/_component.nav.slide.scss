@@ -1,0 +1,58 @@
+@include for-phone-only{
+    .c-sidenav {
+        transform: translateX(-75vw); //sets default position to be off-screen
+        height: 100%;
+        width: 75vw;
+        max-width: 300px;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: lightgray;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    
+        &__link{
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            // transition: 0.3s;
+    
+            &:hover {
+                color: #f1f1f1;
+            }
+        }
+    
+        &--visible{
+          // width: 75vw;
+          transform: translateX(0); //moves the sidebar into the viewport
+        }
+    }
+
+    .c-content-overlay{
+        z-index: 1;
+        position: fixed;
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color-primary--rgb,0);
+        transition: background-color 0.5s;
+        
+        &--visible{
+            background-color: rgba($color-primary--rgb,0.7);
+        }
+    }
+}
+
+@include for-tablet-portrait-up{
+    .c-sidenav{
+        display: none;
+    }
+
+    .c-content-overlay{
+        display: none;
+    }
+}

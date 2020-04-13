@@ -1,0 +1,101 @@
+.c-approach{
+    position: relative;
+    flex-direction: column;
+
+    // &__background{
+
+    // }
+
+    &__texture{
+        background-image: url("../img/aanpak.png"); //set the bg img
+    }
+
+    &__title{
+        color:white;
+    }
+
+    &__card{
+        min-width: 250px;
+        max-width: $floater-width--mobile;
+        min-height: floater-height($floater-width--mobile);
+
+        background-color: white;
+
+        padding: 2rem 1rem;
+
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.6);
+        transition: 0.5s;
+
+        &__icon{
+            width: 8rem !important;
+            height: 8rem !important;
+        }
+    }
+
+    
+}
+
+@include for-phone-only{
+    .c-approach{
+        &__card{
+            max-width: none;
+            width: 100%;
+            margin-top: 60px;
+        }
+    }
+}
+
+@include for-tablet-portrait-up{
+    .c-approach{
+        &__card{
+            max-width: none;
+            width: 100%;
+            margin-top: 60px;
+            flex-direction: row;
+        }
+    }
+}
+
+@include for-tablet-landscape-up{
+    .c-approach{
+        &__background{
+            max-height: $floater-width--mobile;
+        }
+
+        &__wrapper{
+            margin-top: 3rem;
+        }
+
+        &__title{
+            transform: translateY(30px);
+        }
+
+        &__card{
+            flex-direction: column;
+            max-width: $floater-width--mobile;
+        }
+    }
+}
+
+@media(min-width: 900px) and (max-width: 1100px){
+    .c-approach{
+        // &__title{
+        //     font-size: 1.2rem;
+        // }
+        &__card{
+            box-shadow: none;
+            border: 1px solid lightgray;
+            &--middle{
+                border-left: none;
+                border-right: none;
+            }
+        }
+    }
+}

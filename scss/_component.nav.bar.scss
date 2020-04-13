@@ -1,0 +1,72 @@
+.c-nav{
+    z-index: 3;
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    transition: 0.5s;
+    
+    &__wrapper{
+        height: 100%;
+        width: 100%;
+
+        margin: auto;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+
+    }
+
+    &__logo{
+        height: 2rem;
+        flex-grow: 1; 
+
+        background-image: url(../img/logo--white.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+}
+
+@include for-phone-only{
+    .c-nav{
+        height: 60px;
+        position: fixed;
+        background-color: rgb(243, 243, 243);
+        box-shadow: 0px -20px 20px 20px rgba(0,0,0,0.6);
+
+        &__logo{
+            background-image: url(../img/logo--color.png);
+            background-position-x: right;
+        }
+
+        &__list{
+            display:none;
+        }
+    }
+
+
+}
+
+@include for-tablet-portrait-up{
+    .c-nav{
+        &__wrapper{
+            align-items: flex-end;
+        }
+
+        &__list{
+            width: $floater-width--desktop;
+            // background-color: red;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__link{
+            color: white;
+        }
+    }
+}

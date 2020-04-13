@@ -1,0 +1,42 @@
+<section id="contact" class="scrollify o-section c-contact" data-section-name="contact">
+        <!-- wrapper  -->
+    <div class="o-padding-wrapper c-contact__wrapper">
+        <!-- floater  -->
+        <div class="c-contact__left">
+            <div class="c-contact__floater">
+                <div class="c-contact__inner-floater">
+                    <span class="c-contact__inner-floater--title">8</span>
+                    <span class="c-contact__inner-floater--text">jaar ervaring</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- info  -->
+        <div class="c-contact__right">
+            <h1 class="c-contact__info-title">wij zijn <span class="c-contact__info-title--color">poortcentrum</span></h1>
+            <h3 class="c-contact__info-subtitle">aluminium bedrijf</h3>
+            
+            <div class="c-contact__line">
+                <div class="u-line"></div>
+                <div class="u-line--short"></div>
+            </div>
+
+            <div class="c-contact__info">
+                Wij zijn een klein familie bedrijf uit Aarschot.<br>
+                Sinds 2011 maken wij verschillende producten uit aluminium
+                op maat. Van poorten en terras overdekken tot 
+                carports en hekken.
+
+                <ul class="c-contact__info-list">
+                    <li>professioneel vakmanschap</li>
+                    <li>eerlijke prijzen</li>
+                    <li>ad minim venom, quis nostrud.</li>
+                </ul>
+
+                
+            </div>
+
+            <a class="c-contact__link u-link" href="#">Ondek meer over ons</a>
+        </div>
+    </div>
+</section>

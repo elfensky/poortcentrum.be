@@ -6,7 +6,7 @@
 /*------------------------------------*\
   #TOOLS 
 \*------------------------------------*/
-
+@import 'tools';
 /*------------------------------------*\
   #GENERICS
 \*------------------------------------*/
@@ -25,15 +25,17 @@
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
-@import 'components.nav'; //navigation desktop
-@import 'components.sidenav'; //navigation mobile
-@import 'components.hamburger'; //animated hamburger icon
-@import 'components.header';
-@import 'components.about';
-// @import 'components.blog';
-// @import 'components.tours';
-// @import 'components.contact';
-// @import 'components.footer';
+@import 'component.nav.bar'; //navigation desktop
+@import 'component.nav.slide'; //navigation mobile
+@import 'component.nav.hamburger'; //animated hamburger icon
+@import 'component.c.header';
+@import 'component.c.about';
+@import 'component.c.approach';
+@import 'component.c.gallery';
+@import 'component.c.numbers';
+@import 'component.c.reviews';
+@import 'component.c.contact';
+@import 'component.c.footer';
 
 //RESPONSIVE
 // @import 'components.responsive'; //desktop & tablet scaling

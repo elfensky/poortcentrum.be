@@ -3,15 +3,9 @@
 //read more on https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
 
 //Settings – used with preprocessors and contain font, colors definitions, etc.
-$font-size: 16px;
-
-$font-primary: 'Montserrat', sans-serif;
-$font-secondary: 'Hind', sans-serif;
-
-// $font-primary: bold 3rem Montserrat, sans-serif;
-// $font-secondary: normal 1rem Hind, sans-serif;
 
 
+//DISTANCES
 $width-100: 100vw;
 $width-75: 75vw;
 $width-1_2: 50vw;
@@ -26,6 +20,7 @@ $height-1_4: 25vh;
 $height-1_8: 12.5vh;
 $height-1_16: 6.25vh;
 
+//FONT WEIGHTS
 $black: 900;
 $extra-bold: 800;
 $bold: 700;
@@ -36,13 +31,35 @@ $light: 300;
 $extra-light: 200;
 $thin: 100;
 
+// ACTUAL SETTINGS
+//FONTS
+$font: $regular 16px 'Hind', sans-serif;
+$font--title: $semi-bold 2.4rem 'Montserrat', sans-serif;
+
+$font--title-size: 2.4rem;
+
 $color-primary: #1490D7;
+$color-primary--rgb: rgb(20, 144, 215);
 // Squash Palette
 $color-secondary: #de6447;
 $color-terciary: #00a084;
 
 $opacity-overlay: 0.4;
 
-$margins--desktop: 20rem;
-$floater-width: 400px;
-$floater-height: 550px;
+// $margins--desktop: 15rem;
+// $margins--tablet: 
+
+// $floater-ratio: 0.72;
+$floater-width--desktop: 400px;
+$floater-width--mobile: 300px;
+
+@function floater-height($width) {
+    $result: $width / 0.72;
+    @return round($result);
+}
+  
+//   .sidebar {
+//     float: left;
+//     margin-left: pow(4, 3) * 1px;
+//   }
+  

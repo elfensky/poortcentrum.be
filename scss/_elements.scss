@@ -4,21 +4,49 @@
 //Elements 
 //styling for bare HTML elements (like H1, A, etc.). 
 //These come with default styling from the browser so we can redefine them here.
-
-// body{
-//     font-size: $font-size;
-//     font-family: $font-primary, $font-secondary;
-// }
-
-// a{
-//     color: black;
-//     text-decoration: none;
-
-//     &:hover{
-//         text-decoration: underline;
-//     }
-// }
-
-body{
-    font-family: $font-secondary;
+html,body {
+    height:100%;
 }
+
+html {
+    scroll-behavior: smooth;
+    //set scroll behavior on the website to smooth so that clicking on links scrolls the page to where you need to be.
+}
+
+body {
+    font: $font;
+    //set body (=content) of the site to use a specified font-family, size and weight.
+}
+
+@include for-phone-only{
+    h1, h2, h3, h4, h5, h6 {
+        // font-family: $font--title;
+        font: $font--title;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        //set all title tags to use a specified font-family. 
+    }
+}
+
+@include for-tablet-portrait-up{
+    h1, h2, h3, h4, h5, h6 {
+        // font-family: $font--title;
+        font: $font--title;
+        text-transform: uppercase;
+        //set all title tags to use a specified font-family. 
+    }
+}
+
+
+
+// h1{
+//     font-size: $font--title;
+// }
+
+h2{
+    font-size: 1.5rem;
+}
+
+// h3{
+//     font-size: 1rem;
+// }

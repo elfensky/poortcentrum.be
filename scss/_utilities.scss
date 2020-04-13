@@ -1,9 +1,21 @@
-//Utilities
-//utilities and helper classes with ability to override anything which goes before in the triangle, 
-//eg. hide helper class
+// //Utilities
+// //utilities and helper classes with ability to override anything which goes before in the triangle, 
+// //eg. hide helper class
 
 .u-line{ //the accent line used through-out the website
     height: 3px;
-    width: 33%;
+    width: 100px;
     background-color: $color-primary;
+
+    &--short{
+        margin-left: 1rem;
+        height: 3px;
+        width: 30px;
+        background-color: $color-secondary;
+    }
+}
+
+.u-link{
+    color: $color-primary;
+    text-decoration: underline;
 }

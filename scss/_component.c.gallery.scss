@@ -1,0 +1,10 @@
+.c-gallery{
+    &__wrapper{
+        // flex-direction: column;
+        display: block;
+    }
+
+    &__title{
+        margin-bottom: 60px;
+    }
+}
