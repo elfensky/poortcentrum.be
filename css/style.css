@@ -112,7 +112,7 @@ body {
 @media (max-width: 599px) {
   h1, h2, h3, h4, h5, h6 {
     font: 600 2.4rem "Montserrat", sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.7rem !important;
     text-transform: uppercase;
   }
 }
@@ -406,11 +406,14 @@ h2 {
 .c-header__floater {
   background-color: white;
   transition: 1s;
+  display: flex;
 }
-.c-header__title {
-  font-size: 2.4rem;
-  font-weight: 600;
-  line-height: 1.6;
+.c-header__floater__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
 }
 .c-header__icon {
   position: relative;
@@ -441,8 +444,23 @@ h2 {
     padding-top: 120px;
   }
   .c-header__floater {
-    min-height: 417px;
+    width: 100%;
     padding: 1.3rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .c-header__floater__container {
+    margin: 1rem 0;
+    height: 100%;
+    min-height: 417px;
+    max-width: 300px;
+    align-items: center;
+    text-align: center;
+  }
+  .c-header__floater__title {
+    font-size: 2vw;
+    font-weight: 600;
+    line-height: 1.6;
   }
 }
 @media (min-width: 600px) {
@@ -649,11 +667,15 @@ h2 {
 }
 .c-reviews {
   justify-content: flex-start;
+  overflow: hidden;
 }
 .c-reviews__wrapper {
   flex-direction: column;
 }
 
+.c-contact {
+  overflow: hidden;
+}
 .c-contact__texture {
   background-image: url(../img/contact--old.png);
 }

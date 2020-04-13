@@ -1,5 +1,8 @@
 .c-reviews{
     justify-content: flex-start;
+
+    //temporary
+    overflow: hidden;
     
     &__wrapper{
         flex-direction: column;

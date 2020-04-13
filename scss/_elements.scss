@@ -22,7 +22,7 @@ body {
     h1, h2, h3, h4, h5, h6 {
         // font-family: $font--title;
         font: $font--title;
-        font-size: 1.7rem;
+        font-size: 1.7rem !important;
         text-transform: uppercase;
         //set all title tags to use a specified font-family. 
     }

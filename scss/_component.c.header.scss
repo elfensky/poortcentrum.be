@@ -9,13 +9,19 @@
     &__floater{
         background-color: white;
         transition: 1s;
+        display: flex;
+
+        &__container{
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-around;
+        }
     }
 
-    &__title{
-        font-size: 2.4rem;
-        font-weight: 600;
-        line-height: 1.6;
-    }
+    
 
     &__icon{
         position: relative;
@@ -54,9 +60,28 @@
         padding-top: 120px; //mobile navbar is thinner, so this compensates for it and overrides the 80px on desktop
                             //60px navbar + 60px offset
         &__floater{
-            // max-width: $floater-width--mobile;
-            min-height: floater-height($floater-width--mobile);
+            width: 100%;
+            
             padding: 1.3rem;
+
+            align-items: center;
+            justify-content: center;
+
+            &__container{
+                margin: 1rem 0;
+                height: 100%;
+                min-height: floater-height($floater-width--mobile);
+                max-width: $floater-width--mobile;
+
+                align-items: center;
+                text-align: center;
+            }
+
+            &__title{
+                font-size: 2vw;
+                font-weight: 600;
+                line-height: 1.6;
+            }
         }
     }
 }
@@ -74,7 +99,12 @@
             width: $floater-width--desktop;
             height: floater-height($floater-width--desktop);
             padding: 3rem;
-            // margin: 3rem 0;
+
+            // &__title{
+            //     font-size: 2.4rem;
+            //     font-weight: 600;
+            //     line-height: 1.6;
+            // }
         }
     }
 }
