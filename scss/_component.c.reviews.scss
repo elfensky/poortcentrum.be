@@ -8,3 +8,14 @@
         flex-direction: column;
     }
 }
+
+.romw{
+    padding: 1rem;
+    background-color: white;
+    border-top: 4px solid $color-secondary;
+    box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.6);
+}
+
+.romw-author-stars{
+    color: $color-primary;
+}

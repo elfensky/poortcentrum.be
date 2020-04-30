@@ -25,17 +25,32 @@
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
+//home page
 @import 'component.nav.bar'; //navigation desktop
 @import 'component.nav.slide'; //navigation mobile
 @import 'component.nav.hamburger'; //animated hamburger icon
-@import 'component.c.header';
-@import 'component.c.about';
-@import 'component.c.approach';
-@import 'component.c.gallery';
-@import 'component.c.numbers';
-@import 'component.c.reviews';
-@import 'component.c.contact';
-@import 'component.c.footer';
+@import 'component.c.header'; //heading with cta
+@import 'component.c.description'; //short about us description
+@import 'component.c.approach'; //a 3-card info section
+@import 'component.c.gallery'; //gallery of completed works
+@import 'component.c.numbers'; //showing off numbers
+@import 'component.c.reviews'; //showing off reviews
+@import 'component.c.contact'; //contact section with info & form
+@import 'component.c.footer'; //footer
+
+//page aanbod
+@import 'component.p.aanbod';
+
+//page model
+@import 'component.p.model';
+
+//page about
+// @import 'component.about'; //about page.
+
+
+
+//page offers
+// @import 'component.c.shop'; //offers page with pre-designed models
 
 //RESPONSIVE
 // @import 'components.responsive'; //desktop & tablet scaling

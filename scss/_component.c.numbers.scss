@@ -2,21 +2,12 @@
     position: relative;
     flex-direction: column;
     color:white;
-    // &__background{
-
-    // }
 
     &__texture{
-        background-image: url("../img/numbers.png"); //set the bg img
+        background-image: url("../img/home/numbers.jpg"); //set the bg img
     }
 
     &__card{
-        // min-width: 250px;
-        // max-width: $floater-width--mobile;
-        // min-height: floater-height($floater-width--mobile);
-
-        // background-color: white;
-
         padding: 2rem 1rem;
 
         text-align: center;
@@ -32,6 +23,10 @@
             width: 8rem !important;
             height: 8rem !important;
         }
+
+        &__title{
+            font-size: 6rem !important;
+        }
     }
 
     
@@ -41,14 +36,14 @@
     .c-numbers{
         &__card{
             max-width: none;
-            width: 100%;
-            margin-top: 60px;
+            width: 80%;
+            // margin-top: 60px;
 
             &--middle{
                 border-left: none;
                 border-right: none;
-                border-top: 1px solid white;
-                border-bottom: 1px solid white;
+                border-top: 3px solid $color-secondary;
+                border-bottom: 3px solid $color-secondary;
             }
         }
     }
@@ -60,14 +55,26 @@
         &__card{
             max-width: none;
             width: 100%;
-            margin-top: 60px;
+            // margin-top: 60px;
             flex-direction: row;
             
             &--middle{
                 border-left: none;
                 border-right: none;
-                border-top: 1px solid white;
-                border-bottom: 1px solid white;
+                border-top: 3px solid $color-secondary;
+                border-bottom: 3px solid $color-secondary;
+            }
+
+            &__info{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            &__subtitle{
+                font-size: 1.4rem;
             }
         }
     }
@@ -75,9 +82,6 @@
 
 @include for-tablet-landscape-up{
     .c-numbers{
-        // &__background{
-        //     max-height: $floater-width--mobile;
-        // }
 
         &__wrapper{
             margin-top: 3rem;
@@ -91,26 +95,23 @@
             flex-direction: column;
             // max-width: $floater-width--mobile;
             &--middle{
-                border-left: 1px solid white;
-                border-right: 1px solid white;
+                border-left: 3px solid $color-secondary;
+                border-right: 3px solid $color-secondary;
                 border-top: none;
                 border-bottom: none;
             }
+
+            &__info{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            // &__subtitle{
+            //     // font-size: 2.4rem;
+            // }
         }
     }
 }
-
-// @media(min-width: 900px) and (max-width: 1100px){
-//     .c-numbers{
-//         // &__title{
-//         //     font-size: 1.2rem;
-//         // }
-//         &__card{
-//             // border: 1px solid lightgray;
-//             // &--middle{
-//             //     border-left: none;
-//             //     border-right: none;
-//             // }
-//         }
-//     }
-// }

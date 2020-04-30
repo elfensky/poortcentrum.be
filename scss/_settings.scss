@@ -3,7 +3,7 @@
 //read more on https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
 
 //Settings – used with preprocessors and contain font, colors definitions, etc.
-
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Montserrat:wght@600;700&display=swap');
 
 //DISTANCES
 $width-100: 100vw;
@@ -41,11 +41,23 @@ $font--title-size: 2.4rem;
 $color-primary: #1490D7;
 $color-primary--rgb: rgb(20, 144, 215);
 // Squash Palette
-$color-secondary: #de6447;
+// $color-secondary: #de6447;
+$color-secondary: #F6511D;
 $color-terciary: #00a084;
 
-$opacity-overlay: 0.4;
+$color-light: #23a1eb;
 
+// Treedom
+// #1490d7
+// #e55a64
+// #269d3f
+
+$opacity-overlay: 0.6;
+
+//TESTING
+// $color-primary: #de6447;
+// $color-primary--rgb: rgb(222, 100, 71);
+// $color-secondary: #1490D7;
 // $margins--desktop: 15rem;
 // $margins--tablet: 
 

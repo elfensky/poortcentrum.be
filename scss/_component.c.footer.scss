@@ -1,3 +1,75 @@
 .c-footer{
-    background-color: rgba($color: #272727, $alpha: 1.0)
+    background-color: rgba($color: #272727, $alpha: 1.0);
+    color: white;
+
+    a{
+        color: white;
+        &:hover{
+            color: $color-secondary;
+        }
+    }
+
+    h2{
+        margin-bottom: 1rem;
+    }
+
+    &__wrapper{
+        flex-direction: column;
+    }
+
+    &__content{
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: flex-start;
+
+    }
+
+    &__tree{
+        &__list{
+            list-style: inside !important;
+            list-style: disclosure-closed !important;
+
+            &--indented{
+                margin-left: 1rem !important;
+            }
+        }
+    }
+
+    &__extra{
+        &__social{
+            min-height: 300px;
+            align-items: flex-end;
+        }
+    }
+
+    &__copyright{
+        text-align: center;
+        font-size: 0.8rem;
+        color: gray;
+        transform: translateY(30px);
+    }
+}
+
+@include for-phone-only{
+    .c-footer{
+        &__info{
+            h3{
+                font-size: 1rem !important;
+            }
+        }
+        &__extra{
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .c-footer{
+        &__tree{
+            display: none;
+        }
+    }
 }

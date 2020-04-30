@@ -1,0 +1,23 @@
+.c-model{
+    &__wrapper{
+        text-align: center;
+    }
+
+    &__title{
+        margin: auto;
+        color: white;
+        font-size: 10vw !important;
+    }
+}
+
+@include for-phone-only {
+    
+}
+
+@include for-tablet-portrait-up{
+
+}
+
+@include for-tablet-landscape-up{
+
+}

@@ -11,6 +11,8 @@
     align-items: center; //aligned vertically
     justify-content: center; //aligned horizontally
 
+    overflow: hidden;
+
     &__background{
         z-index: -1; //makes sure the background section is under the content
         
@@ -48,6 +50,19 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+
+    &__text{
+        font-size: 14rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        line-height: 9rem;
+        color: white;
+        z-index: -3;
+        opacity: 0.3;
+        font-family: arial;
+        font-weight: 900;
+    }
 }
 
 .o-padding-wrapper{
@@ -57,6 +72,20 @@
 
 @include for-phone-only {
     //       padding: 20px;
+    .o-section{
+        &__background{
+            overflow: hidden;
+        }
+        &__texture{
+            filter: blur(3px);
+            transform: scale(1.1);
+        }
+
+        &__text{
+            font-size: 23vw;
+            line-height: 16vw;
+        }
+    }
     .o-padding-wrapper{
         display: flex;
         flex-direction: column;

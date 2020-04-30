@@ -2,12 +2,8 @@
     position: relative;
     flex-direction: column;
 
-    // &__background{
-
-    // }
-
     &__texture{
-        background-image: url("../img/aanpak.png"); //set the bg img
+        background-image: url("../img/home/approach.png"); //set the bg img
     }
 
     &__title{
@@ -21,21 +17,28 @@
 
         background-color: white;
 
-        padding: 2rem 1rem;
+        padding: 2rem 2rem;
 
         text-align: center;
 
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
 
+        border-top: 4px solid $color-secondary;
         box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.6);
         transition: 0.5s;
 
         &__icon{
             width: 8rem !important;
             height: 8rem !important;
+            color: $color-primary;
+        }
+
+        &__text{
+            margin: 1rem 0;
+            max-width: $floater-width--mobile;
         }
     }
 

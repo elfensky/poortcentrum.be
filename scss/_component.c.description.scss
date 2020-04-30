@@ -1,0 +1,227 @@
+.c-description{
+    // LEFT
+    &__floater{
+        background-image: url(../img/home/description.png);
+        background-position: center;
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+
+        transition: 1s;
+    }
+
+    &__inner-floater{
+        background-color: white;
+        height: 100%;
+        display: flex;
+        
+        flex-grow: 1;
+        margin: 2rem;
+
+        &--title{
+            background-image: url(../img/home/description.png);
+            background-position: center;
+            background-size: cover;
+
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+
+            font-weight: $bold;
+            text-align: center;
+        }
+
+        &--text{
+            width: 100% !important;
+
+            background-image: url(../img/home/description.png);
+            background-position: center;
+            background-size: cover;
+
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            
+            font-weight: $bold;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    // RIGHT
+    &__info{
+
+        &__title{
+            &--color{
+                color: $color-primary;
+            }
+        }
+
+        &__subtitle{
+            color: rgb(112, 112, 112);
+            // margin-top: 1rem;
+        }
+
+        &__line{
+            display: flex;
+            flex-direction: row;
+            margin: 1rem 0;
+        }
+
+        &__list{
+            margin: 1rem 0 !important;
+            list-style: outside !important;
+
+            // &:before {
+            //     content: "-";
+            //     text-indent: -5px;
+            // }
+        }
+    }
+}
+
+@include for-phone-only {
+    .c-description{
+
+        // LEFT 
+        &__left{
+            width: 100%;
+        }
+
+        &__floater{
+            min-height: floater-height($floater-width--mobile);
+        }
+
+        &__inner-floater{
+            flex-direction: column; //soze dependant
+            justify-content: space-evenly;
+            
+            &--title{
+                font-size: 24rem !important;
+                line-height: 14rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+
+            &--text{
+                font-size: 1.4rem;
+            }
+        }
+
+        // RIGHT
+        &__right{
+            width: 100%;
+            margin-top: 60px;
+        }
+
+        &__info{
+            &__list{
+                list-style: inside !important;
+            }
+        }
+    }
+}
+
+@include for-tablet-portrait-up {
+    .c-description{
+
+        &__left{
+            width: 100%;
+        }
+
+        &__floater{
+            min-height: floater-height($floater-width--mobile);
+        }
+
+        &__inner-floater{
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+
+            &--title{
+                font-size: 24rem;
+                line-height: 18rem;
+                padding-top: 0rem;
+                padding-bottom: 1rem;
+            }
+            
+            &--text{
+                width: min-content;
+                padding-left: 1rem;
+                font-size: 2.4rem;
+                line-height: 1;
+                text-align: left;
+            }
+        }
+
+        &__right{
+            width: 100%;
+            margin-top: 60px;
+        }
+    }
+}
+
+@include for-tablet-landscape-up{
+    .c-description{
+        //LEFT SECTION
+        &__left{
+            width: 50%;
+        }
+
+        &__floater{
+            max-width: $floater-width--mobile;
+            min-height: floater-height($floater-width--mobile);
+        }
+
+        &__inner-floater{
+            flex-direction: column; //soze dependant
+            justify-content: space-evenly; //size dependant
+            align-items: center; //size dependant
+
+            &--title{
+                font-size: 20rem;
+                line-height: 15rem;
+                padding-top: 0;
+            }
+
+            &--text{
+                padding-left: 0;
+                font-size: 1.4rem;
+                text-align: center;
+            }
+        }
+
+        //RIGHT SECTION
+        &__right{
+            width: 50%;
+            margin-top: 0;
+        }
+    }
+}
+
+@include for-desktop-up{
+    .c-description{
+        &__floater{
+            max-width: $floater-width--desktop;
+            height: floater-height($floater-width--desktop);
+        }
+
+        &__inner-floater{
+            justify-content: space-evenly; //size dependant
+            
+            &--title{
+                font-size: 26rem;
+                line-height: 16rem;
+                padding-top: 1.2rem;
+                padding-bottom: 2rem;
+            }
+
+            &--text{
+                // background-color: red;
+                font-size: 2rem;
+                
+            }
+        }
+    }
+}

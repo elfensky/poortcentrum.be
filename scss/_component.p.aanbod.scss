@@ -1,0 +1,206 @@
+.c-about{
+    &__cloud{
+        color: white !important;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        // text-align: center;
+
+        &__link{
+            color: white;
+
+            &--alt{
+                color: $color-secondary;
+            }
+
+            &:hover{
+                text-decoration: underline;
+                text-decoration-thickness: 4px;
+            }
+        }
+    }
+
+    &__section{
+        padding-bottom: 0;
+
+        &__content{
+            position: relative;
+            &__title{
+                // position: absolute;
+                // font-size: 7rem;
+                font-size: 6vw !important;
+                // font-family: impact;
+                font-weight: 600;
+                // opacity: 0.4;
+                // color: $color-secondary;
+                // top: -4rem;
+                z-index: -1;
+            }
+
+            &__text{
+                padding-bottom: 30px;
+            }
+
+            &__paragraph{
+                margin-bottom: 30px;
+            }
+
+            &__list{
+                display: flex;
+                flex-direction: row;
+                max-width: 600px;
+                justify-content: space-between;
+                margin-block-start: -1rem;
+                margin-block-end: 1rem;
+                padding-inline-start: 0;
+                list-style: inside !important;
+                margin-top: -30px !important;
+                margin-bottom: 30px !important;
+            }
+        }
+    }
+
+    &__gallery{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        // &:before {
+        //     content: "";
+        //     width: 31%;
+        // }
+
+        &:after {
+            content: "";
+            width: 31%;
+        }
+    }
+
+    &__card{
+        width: 31%;
+        margin-bottom: 1.6rem;
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        text-align: center;
+        position: relative;
+
+        // &--nolink{
+        //     padding-top: 34%;
+        // }
+
+        &__overlay{
+            position: absolute;
+            top: 0;
+            width: min-content;
+            text-align: left;
+            background-color: $color-primary;
+
+            // width: 100%;
+            // height: 100%;
+        }
+
+        &__title{
+            // color: $color-primary;
+            // color: $color-secondary;
+            color: white;
+            padding: 0 0.5rem;
+
+            // background-image: url(../img/home/description.png);
+            background-position: center;
+            background-size: cover;
+            -webkit-text-fill-color: rgba(255,255,255,0.7);
+            // -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            font-size: 1.5rem;
+        }
+    }
+
+    
+}
+
+
+@include for-phone-only {
+    .c-about{
+        &__section{
+            // padding-top: 60px;
+            padding-bottom: 0 !important;
+
+            &__content{
+                &__title{
+                    font-size: 10vw !important;
+                    top: -10vw;
+
+                    &--small{
+                        font-size: 9vw !important;
+                    }
+                }
+                &__list{
+                    flex-direction: column;
+                }
+            }
+        }
+
+        &__card{
+            pointer-events: none;
+        }
+
+        &__cloud{
+            flex-direction: column;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        &__gallery{
+            &::after {
+                content: "";
+                width: 100%;
+            }
+        }
+
+        &__card{
+            width: 100%;
+
+            img{width: 100%;}
+        }        
+    }
+}
+
+@include for-tablet-portrait-up{
+    .c-about{
+        &__gallery{
+            &::after {
+                content: "";
+                width: 47%;
+            }
+        }
+
+        &__card{
+            
+            width: 47%;
+        }
+    }
+}
+
+@include for-tablet-landscape-up{
+    .c-about{
+        // height: 70vh;
+
+        &__gallery{
+            &::after {
+                content: "";
+                width: 31%;
+            }
+        }
+
+        &__card{
+            width: 31%;
+        }
+    }
+}
