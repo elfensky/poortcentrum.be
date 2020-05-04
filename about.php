@@ -5,7 +5,7 @@
     <!-- image background with blue overlay -->
     <div class="o-section__background c-header__background">
         <div class="o-section__overlay"></div>
-        <div class="o-section__texture c-header__texture--catalog"></div>
+        <div class="o-section__texture c-header__texture--about"></div>
         <div class="o-section__text">OVER ONS</div>
     </div>
     <div class="o-padding-wrapper c-header__wrapper c-model__wrapper">
@@ -16,8 +16,7 @@
 </header>
 
 <!-- aboutus  -->
-<section id="aboutus" class="o-section c-about__section" data-section-name="aboutus">
-    <!-- wrapper  -->
+<!-- <section id="aboutus" class="o-section c-about__section" data-section-name="aboutus">
     <div class="o-padding-wrapper">
         <article class="c-about__section__content">
             <h1 class="c-about__section__content__title">WIE ZIJN WIJ?</h1>
@@ -27,8 +26,8 @@
             </div>
             <div class="c-about__section__content__text">
                 <p class="c-about__section__content__paragraph">
-                Wij zijn een klein familie bedrijf uit Aarschot. Sinds 2011 maken wij verschillende producten uit aluminium op maat. Van poorten en terras overdekken tot carports en hekken.
-                Als een jonge en dynamische constructeur van aluminium tuin producten. Wij zijn gestart met aluminium poorten en hekken, en dat is nog steeds onze hoofdactiviteit.
+                Wij zijn een jonge en dynamische familie bedrijf uit Aarschot. Wij zijn gespecialiseerd in het maken van verschillende producten uit aluminium. Van poorten en terras overdekken tot carports en hekken.
+                Wij zijn gestart met aluminium poorten en hekken, en dat is nog steeds onze hoofdactiviteit.
                 Ondertussen zijn wij uitgebrijd naar andere producten, en bestaat onze assortiment uit:
                 <ul>
                     <li>Poorten</li>
@@ -48,6 +47,39 @@
                 Bekijk alvast onze aanbod om een indicatie te krijgen over de verschillende modellen, indien u uw gewenste model niet kan vinden in onze album stuur ons een foto
                 en wij maken het voor u zoals u wenst.                
                 </p>
+            </div>
+        </article>
+    </div>
+</section> -->
+
+<!-- productie  -->
+<section id="manufacturing" class="o-section c-about__section" data-section-name="troeven">
+    <!-- wrapper  -->
+    <div class="o-padding-wrapper">
+        <article class="c-about__section__content">
+            <h1 class="c-about__section__content__title">PRODUCTIE</h1>
+            <div class="c-description__info__line">
+                <div class="u-line"></div>
+                <div class="u-line--short"></div>
+            </div>
+            <img class="c-about__production__img--heading" src="img/about/productie1.jpg" alt="man welding metal">
+
+            <div class="c-about__section__content__text c-about__production" >
+                <!-- <img class="c-about__production__img--inline1" src="img/about/productie2.jpg" alt="man welding metal"> -->
+                <p class="c-about__section__content__paragraph">
+                Wij hebben geen standaard afmetingen; al onze producten zijn maatwerk.
+                Door het gebruik van onze eigen hoogwaardige geëxtrudeerde profielen zijn wij verzekerd van een constante kwaliteit van onze gebruikte materialen.
+                En met onze speciale gevormde profielen kunnen wij de meeste modellen produceren met een minimum aan zichtbare lasnaden.
+                </p>
+                <!-- <img class="c-about__production__img--inline2" src="img/about/productie3.jpg" alt="man welding metal"> -->
+
+                <p class="c-about__section__content__paragraph">
+                Waar wij ons wel enigszins anders profileren is onze voorbehandeling van het lakproces, om een goede hechting van de coating te verkrijgen is het noodzakelijk dat de “oxidehuid” van de profielen volledig verwijderd wordt. 
+                Dit gebeurd bij ons in onze eigen atelier door middel van stralen waardoor we 100 % zeker zijn dat de oxidehuid volledig verwijderd is en dit voor een optimale hechting zorgt. Tevens worden al onze producten 2x gecoat en 2x gebakken op 195°.
+                </p>
+                
+
+
             </div>
         </article>
     </div>
@@ -79,8 +111,8 @@
     </div>
 </section>
 
+<!-- 
 <section id="design" class="o-section c-about__section" data-section-name="troeven">
-    <!-- wrapper  -->
     <div class="o-padding-wrapper">
         <article class="c-about__section__content">
             <h1 class="c-about__section__content__title">DESIGN</h1>
@@ -96,28 +128,11 @@
             </div>
         </article>
     </div>
-</section>
+</section> -->
 
-<section id="manufacturing" class="o-section c-about__section" data-section-name="troeven">
-    <!-- wrapper  -->
-    <div class="o-padding-wrapper">
-        <article class="c-about__section__content">
-            <h1 class="c-about__section__content__title">PRODUCTIE</h1>
-            <div class="c-description__info__line">
-                <div class="u-line"></div>
-                <div class="u-line--short"></div>
-            </div>
-            <div class="c-about__section__content__text">
-                <p class="c-about__section__content__paragraph">
-                Vertel hier wat er allemaal gedaan wordt tijdens de productie, alle details met fotos.
-                </p>
-            </div>
-        </article>
-    </div>
-</section>
 
-<section id="installation" class="o-section c-about__section" data-section-name="troeven">
-    <!-- wrapper  -->
+
+<!-- <section id="installation" class="o-section c-about__section" data-section-name="troeven">
     <div class="o-padding-wrapper">
         <article class="c-about__section__content">
             <h1 class="c-about__section__content__title">INSTALLATIE</h1>
@@ -132,7 +147,7 @@
             </div>
         </article>
     </div>
-</section>
+</section> -->
 
 
 <?php require("footer.php"); ?>

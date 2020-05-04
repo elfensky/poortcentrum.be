@@ -1,5 +1,5 @@
 .c-reviews{
-    justify-content: flex-start;
+    // justify-content: ;
 
     //temporary
     overflow: hidden;
@@ -7,9 +7,24 @@
     &__wrapper{
         flex-direction: column;
     }
+
+    &__title, &__info__line{
+        width: 100%;
+    }
+
+    &__content{
+        margin-top: 30px;
+    }
+}
+.romw-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
 }
 
 .romw{
+    width: 46%;
+
     padding: 1rem;
     background-color: white;
     border-top: 4px solid $color-secondary;
@@ -18,4 +33,15 @@
 
 .romw-author-stars{
     color: $color-primary;
+}
+
+@include for-phone-only {
+    .romw-list{
+        flex-direction: column;
+        justify-content: start; 
+    }
+    
+    .romw{
+        width: 100%;
+    }
 }

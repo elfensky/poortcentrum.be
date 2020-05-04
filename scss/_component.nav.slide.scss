@@ -38,13 +38,13 @@
         // pointer-events: none;
         width: 100%;
         height: 100%;
-        background-color: rgba($color-primary--rgb,0);
+        background-color: rgba($color-primary, 0);
         transition: background-color 0.5s;
 
         pointer-events: none;
         
         &--visible{
-            background-color: rgba($color-primary--rgb,0.7);
+            background-color: rgba($color-primary, 0.75);
             
             pointer-events: all;
         }

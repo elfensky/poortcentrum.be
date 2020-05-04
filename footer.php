@@ -59,7 +59,7 @@
                         <a href="#"><i class="c-contact__right__social__icon fab fa-instagram"></i></a>
                         <a href="#"><i class="c-contact__right__social__icon fab fa-facebook-square"></i></a>
                         <a href="#"><i class="c-contact__right__social__icon fab fa-twitter"></i></a>
-                        <a href="#"><i class="c-contact__right__social__icon fab fa-whatsapp"></i></a>
+                        <a href="https://wa.me/32479573702"><i class="c-contact__right__social__icon fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
@@ -76,8 +76,8 @@
     <script src="https://kit.fontawesome.com/b5152dcdcb.js" crossorigin="anonymous"></script>
     <script src="js/nav.js"></script>
     <script src="js/fancybox.min.js"></script>
-    <script src="js/pig.min.js"></script>
-    <script src="js/pig.config.js"></script>
+    <!-- <script src="js/pig.min.js"></script>
+    <script src="js/pig.config.js"></script> -->
     <!-- <script src='https://www.hCaptcha.com/1/api.js' async defer></script> -->
     <script src="https://www.google.com/recaptcha/api.js?render=6Lf8wuwUAAAAAMyN77uDNVahwr7fdpvE3RIEqjwz"></script>
     <script>

@@ -7,7 +7,7 @@
     <!-- image background with blue overlay -->
     <div class="o-section__background c-header__background">
         <div class="o-section__overlay"></div>
-        <div class="o-section__texture c-header__texture--catalog"></div>
+        <div class="o-section__texture c-header__texture--aanbod"></div>
         <div class="o-section__text"><?php echo strtoupper($type) ?></div>
     </div>
     <div class="o-padding-wrapper c-header__wrapper c-model__wrapper">
@@ -27,14 +27,16 @@
                 <div class="u-line"></div>
                 <div class="u-line--short"></div>
             </div>
-            <!-- <div class="c-about__section__content__text">
-                <p class="c-about__section__content__paragraph">Tevens zijn wij gespecialiseerd in carports met vlak of gebogen, met gesloten steeldek en polycarbonaat lichtdoorlatend dak. 
-                Indien gewenst kunnen er zijwanden ingewerkt worden volgens model van de poorten of hout, ledstrips met bewegingsmelder behoren tevens tot de mogelijkheden.
-                </p>
-            </div> -->
+            <div class="c-about__section__content__text">
+                <?php
+                    $contents = file_get_contents("img/aanbod/poorten/" . $type . "/" . $type . ".php" );
+                    echo $contents;
+                ?>   
+            </div>
+
             <div class="c-about__gallery c-about__gallery--odd">
             <?php
-                $dirname = "img/catalog/poorten/" . $type . "/";
+                $dirname = "img/aanbod/poorten/" . $type . "/";
                 // $images = scandir($dirname);
                 $images = preg_grep('~\.(jpeg|jpg|png)$~', scandir($dirname));
                 // shuffle($images);
@@ -53,9 +55,9 @@
                 $amount = sizeof($images);
                 if($amount < 3){
                     for ($x = 0; $x < (3-$amount); $x++) {
-                        echo "<a class='c-about__card' href='img/catalog/poorten/noimg/noimage_large.jpg' data-fancybox='gate'>
-                                            <img src='img/catalog/poorten/noimg/noimage_small.jpg' alt='noimg' />
-                                            <div class='c-about__card__overlay'><h2 style='background-image: url(img/catalog/poorten/noimg/noimage_small.jpg);' class='c-about__card__title'>N/A</h2></div></a>";
+                        echo "<a class='c-about__card' href='img/aanbod/poorten/noimg/noimage_large.jpg' data-fancybox='gate'>
+                                            <img src='img/aanbod/poorten/noimg/noimage_small.jpg' alt='noimg' />
+                                            <div class='c-about__card__overlay'><h2 style='background-image: url(img/aanbod/poorten/noimg/noimage_small.jpg);' class='c-about__card__title'>N/A</h2></div></a>";
                     } 
                 }
             ?>

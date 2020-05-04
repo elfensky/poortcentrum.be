@@ -6,10 +6,6 @@
     height: 3px;
     width: 100px;
     background-color: $color-primary;
-
-    &--orange{
-        background-color: $color-secondary;
-    }
     
     &--short{
         margin-left: 1rem;
@@ -20,11 +16,11 @@
 }
 
 .u-link{
-    color: $color-primary;
+    color: $color-secondary;
     text-decoration: underline;
     transition: 0.3s;
 
     &:hover{
-        color: $color-secondary;
+        color: $color-primary;
     }
 }

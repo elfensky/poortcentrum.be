@@ -5,7 +5,7 @@
     <!-- image background with blue overlay -->
     <div class="o-section__background c-header__background">
         <div class="o-section__overlay"></div>
-        <div class="o-section__texture c-header__texture--catalog"></div>
+        <div class="o-section__texture c-header__texture--aanbod"></div>
         <div class="o-section__text">AANBOD</div>
     </div>
     <div class="o-padding-wrapper c-header__wrapper">
@@ -26,32 +26,39 @@
     <div class="o-padding-wrapper">
         <article class="c-about__section__content">
             <h1 class="c-about__section__content__title">POORTEN</h1>
-            <h3 class="c-description__info__subtitle">TUINPOORTEN, AFSLUITINGEN, HEKKEN</h3>
+            <h3 class="c-description__info__subtitle">AUTOMATISATIE, TUINPOORTEN, AFSLUITINGEN, HEKKEN</h3>
             <div class="c-description__info__line">
                 <div class="u-line"></div>
                 <div class="u-line--short"></div>
             </div>
             <div class="c-about__section__content__text">
-                <p class="c-about__section__content__paragraph">Onze ervaring stelt ons in staat u de beste kwaliteit te garanderen en diverse ontwerpen aan te bieden. Wij produceren zowel minimalistische en moderne als klassieke retro modellen in <span style="font-weight:600;">100% aluminium</span>.
-                    
+                <p class="c-about__section__content__paragraph">Onze ervaring stelt ons in staat u de beste kwaliteit te garanderen en diverse ontwerpen aan te bieden. 
+                    Wij produceren zowel minimalistische en moderne als klassieke retro modellen in <span style="font-weight:600;">100% aluminium</span>.
+                    De poorten worden volledig op maat geproduceerd met onze monoblok profielen die garant staan voor een mooie, elegenate afwerking zonder zichtbare lasnaden.
+                    Al onze poorten kunnen als een draai,- schuif,- of vrijdragend model geproduceerd worden.
                 </p>
-                <p class="c-about__section__content__paragraph">
-                    Afsluitingen of Hekken kunnen in dezelfde uitvoering als onze poorten geproduceerd worden, al onze poorten kunnen vanzelfsprekend geautomatiseerd worden, met fotocellen en 2 remote controllers als standaard.
+                <div class="c-about__section__content__paragraph">
+                    Elk van onze poorten kan geautomatiseerd worden en is compatibel met de meeste garagedeur motors.
+                    Bij onze automatisatie komen standaard met fotocellen en 2 remote controllers. Andere opties houden onder anderen:
                     <ul class="c-about__section__content__list">
                         <li>videofonie</li>
                         <li>parlefonie</li>
                         <li>codeklavier</li>
                         <li>gsm module</li>
                     </ul>
+                </div>
+                
+                <p class="c-about__section__content__paragraph">
+                    Afsluitingen of Hekken kunnen in dezelfde uitvoering als de poorten worden gemaakt met stijlvolle verlichting op elke paal gecoat in dezelfde kleur zorgen ervoor dat u zelf ‘s avonds optimaal kan genieten van uw tuin.
                 </p>
                 <p class="c-about__section__content__paragraph">
-                Vanaf productie tot montage van het eindproduct gebeurd in eigen beheer dus zonder onderaannemers waardoor we onze kwaliteit kunnen garanderen aan de juiste prijs.
+                Vanaf productie tot montage van het eindproduct gebeurd in eigen beheer dus zonder onderaannemers waardoor we onze kwaliteit kunnen garanderen aan de juiste prijs. Leverbaar in talrijke gepoedercoate kleuren.
                 </p>
             </div>
             <div class="c-about__gallery">
             
             <?php
-                $dirname = "img/catalog/poorten/";
+                $dirname = "img/aanbod/poorten/";
                 // $images = scandir($dirname);
                 $images = preg_grep('~\.(jpeg|jpg|png)$~', scandir($dirname));
                 // shuffle($images);
@@ -85,7 +92,7 @@
             </div>
             <div class="c-about__gallery c-about__gallery--odd">
             <?php
-                $dirname = "img/catalog/carports/";
+                $dirname = "img/aanbod/carports/";
                 // $images = scandir($dirname);
                 $images = preg_grep('~\.(jpeg|jpg|png)$~', scandir($dirname));
                 // shuffle($images);
@@ -116,19 +123,11 @@
                 <p class="c-about__section__content__paragraph">
                 Al dan niet in combinatie met een terrasoverkapping leveren wij sinds kort ook glazen schuifwanden aan, steeds als maatwerk met 10 mm gehard veiligheidsglas, regelbare wielen met kogellagers en “meenemers” zodat u met 1 glaspaneel uw volledige wand open en dicht kan schuiven, in optie kunnen er ook tochtborstels gemonteerd worden.   Elke ral kleur zonder meerprijs. 
                 </p>
-                <p class="c-about__section__content__paragraph">
-                Wij hebben geen standaard afmetingen; al onze producten zijn maatwerk.
-                Door het gebruik van onze eigen hoogwaardige geëxtrudeerde profielen zijn wij verzekerd van een constante kwaliteit van onze gebruikte materialen.
-                En met onze speciale gevormde profielen kunnen wij de meeste modellen produceren met een minimum aan zichtbare lasnaden.
-                </p>
-                <p class="c-about__section__content__paragraph">
-                Waar wij ons wel enigszins anders profileren is onze voorbehandeling van het lakproces, om een goede hechting van de coating te verkrijgen is het noodzakelijk dat de “oxidehuid” van de profielen volledig verwijderd wordt. Dit gebeurd bij ons in onze eigen atelier door middel van stralen waardoor we 100 % zeker zijn dat de oxidehuid volledig verwijderd is en dit voor een optimale hechting zorgt. Tevens worden al onze producten 2 x gecoat en 2 x gebakken op 195 °.
-                </p>
             </div>
             
             <div class="c-about__gallery c-about__gallery--odd">
             <?php
-                $dirname = "img/catalog/schuifwanden/";
+                $dirname = "img/aanbod/schuifwanden/";
                 // $images = scandir($dirname);
                 $images = preg_grep('~\.(jpeg|jpg|png)$~', scandir($dirname));
                 // shuffle($images);
@@ -150,7 +149,8 @@
     <!-- wrapper  -->
     <div class="o-padding-wrapper">
         <article class="c-about__section__content">
-            <h1 class="c-about__section__content__title c-about__section__content__title--small">TERRAS OVERKAPPINGEN</h1>
+            <h1 class="c-about__section__content__title c-about__section__content__title--small">TERRAS</h>
+            <h3 class="c-description__info__subtitle">OVERKAPPINGEN & POOLHOUSE</h3>
             <div class="c-description__info__line">
                 <div class="u-line"></div>
                 <div class="u-line--short"></div>
@@ -159,10 +159,11 @@
                 <p class="c-about__section__content__paragraph">
                 Terrasoverkappingen in aluminium draag constructie’s met polycarbonaat platen of glas als dakbedekking transparant of zonwerend, als optie’s kan ledverlichting ingebouwd, worden en om het geheel compleet te maken bieden wij deze eveneens aan met glazen schuifwanden zodat u bij minder zonnige dagen op een comfortabele manier van het buitenleven kan blijven genieten.
                 </p>
+                <p class="c-about__section__content__paragraph">Een pool-house opgebouwd in dubbelwandige aluminium klik profielen van 100 – 200 of 40 mm hoog, al dan niet met glazen schuifwanden, onderhoud vrij waar het gezellig vertoeven is na een verfrissende duik, tevens leverbaar met geintegreerd berghok.</p>
             </div>
             <div class="c-about__gallery c-about__gallery--odd">
             <?php
-                $dirname = "img/catalog/terras/";
+                $dirname = "img/aanbod/terras/";
                 // $images = scandir($dirname);
                 $images = preg_grep('~\.(jpeg|jpg|png)$~', scandir($dirname));
                 // shuffle($images);

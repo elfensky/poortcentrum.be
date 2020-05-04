@@ -19,21 +19,16 @@
         flex-grow: 1;
         margin: 2rem;
 
-        &--title{
-            background-image: url(../img/home/description.png);
-            background-position: center;
-            background-size: cover;
-
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
-
-            font-weight: $bold;
-            text-align: center;
-        }
+        // overflow-wrap: anywhere;
+        // overflow: hidden;
 
         &--text{
-            width: 100% !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            // width: 100% !important;
 
             background-image: url(../img/home/description.png);
             background-position: center;
@@ -46,6 +41,8 @@
             font-weight: $bold;
             text-align: center;
             text-transform: uppercase;
+
+            transition: 1s;
         }
     }
 
@@ -54,7 +51,7 @@
 
         &__title{
             &--color{
-                color: $color-primary;
+                color: $color-secondary;
             }
         }
 
@@ -96,16 +93,9 @@
         &__inner-floater{
             flex-direction: column; //soze dependant
             justify-content: space-evenly;
-            
-            &--title{
-                font-size: 24rem !important;
-                line-height: 14rem;
-                padding-top: 2rem;
-                padding-bottom: 2rem;
-            }
 
             &--text{
-                font-size: 1.4rem;
+                font-size: 29vw !important;
             }
         }
 
@@ -131,27 +121,18 @@
         }
 
         &__floater{
-            min-height: floater-height($floater-width--mobile);
+            // min-height: floater-height($floater-width--mobile);
         }
 
         &__inner-floater{
-            flex-direction: row;
+            // flex-direction: row;
             align-items: center;
             justify-content: space-evenly;
+            padding: 1rem;
 
-            &--title{
-                font-size: 24rem;
-                line-height: 18rem;
-                padding-top: 0rem;
-                padding-bottom: 1rem;
-            }
-            
             &--text{
-                width: min-content;
-                padding-left: 1rem;
-                font-size: 2.4rem;
-                line-height: 1;
-                text-align: left;
+                flex-direction: row;
+                font-size: 11vw;
             }
         }
 
@@ -179,16 +160,10 @@
             justify-content: space-evenly; //size dependant
             align-items: center; //size dependant
 
-            &--title{
-                font-size: 20rem;
-                line-height: 15rem;
-                padding-top: 0;
-            }
 
             &--text{
-                padding-left: 0;
-                font-size: 1.4rem;
-                text-align: center;
+                flex-direction: column;
+                font-size: 6rem;
             }
         }
 
@@ -208,19 +183,11 @@
         }
 
         &__inner-floater{
-            justify-content: space-evenly; //size dependant
+            // justify-content: space-evenly; //size dependant
             
-            &--title{
-                font-size: 26rem;
-                line-height: 16rem;
-                padding-top: 1.2rem;
-                padding-bottom: 2rem;
-            }
-
             &--text{
-                // background-color: red;
-                font-size: 2rem;
-                
+                font-size: 8rem;
+                line-height: 9rem;
             }
         }
     }

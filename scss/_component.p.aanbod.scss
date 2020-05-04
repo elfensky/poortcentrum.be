@@ -27,6 +27,7 @@
 
         &__content{
             position: relative;
+
             &__title{
                 // position: absolute;
                 // font-size: 7rem;
@@ -41,6 +42,10 @@
 
             &__text{
                 padding-bottom: 30px;
+                // column-count: 3;
+                // column-fill: auto;
+                // min-height: 200px;
+                // max-height: 350px;
             }
 
             &__paragraph{
@@ -48,16 +53,16 @@
             }
 
             &__list{
-                display: flex;
-                flex-direction: row;
-                max-width: 600px;
-                justify-content: space-between;
-                margin-block-start: -1rem;
-                margin-block-end: 1rem;
-                padding-inline-start: 0;
+                // display: flex;
+                // flex-direction: row;
+                // max-width: 600px;
+                // justify-content: space-between;
+                // margin-block-start: -1rem;
+                // margin-block-end: 1rem;
+                // padding-inline-start: 0;
                 list-style: inside !important;
-                margin-top: -30px !important;
-                margin-bottom: 30px !important;
+                // margin-top: -30px !important;
+                // margin-bottom: 30px !important;
             }
         }
     }
@@ -99,7 +104,7 @@
             top: 0;
             width: min-content;
             text-align: left;
-            background-color: $color-primary;
+            background-color: $color-secondary;
 
             // width: 100%;
             // height: 100%;
@@ -114,7 +119,7 @@
             // background-image: url(../img/home/description.png);
             background-position: center;
             background-size: cover;
-            -webkit-text-fill-color: rgba(255,255,255,0.7);
+            -webkit-text-fill-color: rgba(255,255,255,0.9);
             // -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
             background-clip: text;
@@ -174,6 +179,10 @@
 
 @include for-tablet-portrait-up{
     .c-about{
+        &__cloud{
+            text-align: center;
+        }
+        
         &__gallery{
             &::after {
                 content: "";
@@ -201,6 +210,37 @@
 
         &__card{
             width: 31%;
+        }
+
+        &__production{
+            column-count: 3;
+            column-fill: auto;
+            // min-height: 240px;
+            max-height: 220px;
+
+            &__img{
+
+                &--heading{
+                    max-height: 300px;
+                    width: 100%;
+                    object-fit: cover;
+                    margin-bottom: 30px;
+                }
+
+                &--inline1{
+                    width: 50%;
+                    float: left;
+                    margin-right: 1rem;
+                }
+
+                &--inline2{
+                    max-height: 260px;
+                    float: left;
+                    margin-right: 1rem;
+                }
+
+                margin-bottom: 1rem;
+            }
         }
     }
 }

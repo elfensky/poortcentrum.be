@@ -13,7 +13,7 @@
     &__card{
         min-width: 250px;
         max-width: $floater-width--mobile;
-        min-height: floater-height($floater-width--mobile);
+        // min-height: floater-height($floater-width--mobile);
 
         background-color: white;
 
@@ -40,9 +40,7 @@
             margin: 1rem 0;
             max-width: $floater-width--mobile;
         }
-    }
-
-    
+    }    
 }
 
 @include for-phone-only{
@@ -62,6 +60,7 @@
             width: 100%;
             margin-top: 60px;
             flex-direction: row;
+            min-height: none !important;
         }
     }
 }
@@ -83,6 +82,7 @@
         &__card{
             flex-direction: column;
             max-width: $floater-width--mobile;
+            min-height: floater-height($floater-width--mobile);
         }
     }
 }

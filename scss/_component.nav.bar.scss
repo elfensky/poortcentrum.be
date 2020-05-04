@@ -6,6 +6,20 @@
 
     transition: 0.5s;
     
+    &__cta{
+        // border: 2px solid $color-secondary;
+        padding: 0.5rem 1rem;
+        border-radius: 0.3rem;
+        color: white !important;
+        display: flex;
+        background-color:  $color-secondary;
+
+        &:hover{
+            background-color: #e33203;
+            transition: 0.3s;
+        }
+    }
+
     &__wrapper{
         height: 100%;
         width: 100%;
@@ -24,7 +38,7 @@
         height: 2rem;
         flex-grow: 1; 
 
-        background-image: url(../img/logo--white--orange.png);
+        background-image: url(../img/logo--white.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: left center;
@@ -59,7 +73,7 @@
         box-shadow: 0px -20px 20px 20px rgba(0,0,0,0.6);
 
         &__logo{
-            background-image: url(../img/logo--color--orange.png);
+            background-image: url(../img/logo--black.png);
             background-position-x: right;
 
             display: flex;
@@ -126,7 +140,7 @@
             }
 
             &__logo{
-                background-image: url(../img/logo--color--orange.png);
+                background-image: url(../img/logo--black.png);
             }
 
             &__link{

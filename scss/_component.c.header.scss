@@ -7,8 +7,12 @@
             background-image: url("../img/home/header--home.jpg"); //set the bg img
         }
 
-        &--catalog{
-            background-image: url("../img/catalog/header--catalog3.jpg");
+        &--aanbod{
+            background-image: url("../img/aanbod/header--aanbod.jpg");
+        }
+
+        &--about{
+            background-image: url("../img/about/header--about.jpg");
         }
     }
 
@@ -18,7 +22,41 @@
         // height: min-content !important;
     }
 
+    &__info{
+        display: flex;
+        
+
+        &__section{
+            border-top: 4px solid $color-secondary;
+            padding: 1rem;
+            color: black;
+            background-color: white;
+            // width: max-content;
+            // background-color: orange;
+        }
+        &__title{
+            margin-bottom: 1rem;
+        }
+        
+        &__list{
+            &__item{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-bottom: 0.5rem;
+
+                a{
+                    color: black;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
     &__floater{
+        // border-top: 4px solid $color-secondary;
         background-color: white;
         transition: 1s;
         display: flex;
@@ -35,8 +73,8 @@
 
     &__icon{
         position: relative;
-        color: $color-primary;
-        border: 2px solid $color-primary;
+        color: $color-secondary;
+        border: 2px solid $color-secondary;
         // display: flex;
         padding: 0.25rem 0.5rem;
     }
@@ -57,25 +95,17 @@
             flex-direction: row;
             justify-content: space-between;
         }
-        &__list{
-            list-style: inside !important;
-
-            &--right{
-                text-align: right;
-                direction: rtl;
-            }
-        }
     }
 
     &__cta{
         padding: 0.25rem 1.5rem;
-        border: 2px solid $color-primary;
+        border: 2px solid $color-secondary;
         border-radius: 0.3rem;
         color: black;
 
         &:hover{
             transition: 0.3s;
-            background-color: $color-primary;
+            background-color: $color-secondary;
             color: white;
         }
     }
@@ -86,31 +116,66 @@
 @include for-phone-only {
 
     .c-header{
-        padding-top: 120px; //mobile navbar is thinner, so this compensates for it and overrides the 80px on desktop
+        padding-top: 90px; //mobile navbar is thinner, so this compensates for it and overrides the 80px on desktop
                             //60px navbar + 60px offset
+
+        &__wrapper{
+            flex-direction: column-reverse;
+        }
+
+        &__info{
+            flex-direction: column;
+            margin: 0;
+            width: 100%;
+
+            &__section{
+                width: 100%;
+                max-width: none;
+                margin-top: 30px;
+                padding: 1rem 2rem;
+            }
+        }
+
         &__floater{
             width: 100%;
-            
-            padding: 1.3rem;
-
-            align-items: center;
-            justify-content: center;
+            padding: 0 2rem;
 
             &__container{
                 margin: 1rem 0;
                 height: 100%;
                 min-height: floater-height($floater-width--mobile);
-                max-width: $floater-width--mobile;
-
-                align-items: center;
-                text-align: center;
             }
 
             &__title{
-                font-size: 2vw;
+                font-size: 8vw !important;
                 font-weight: 600;
                 line-height: 1.6;
             }
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 730px){
+    .c-header{
+        &__wrapper{
+            flex-direction: column-reverse !important;
+        }
+
+        &__info{
+            flex-direction: column;
+            margin: 0;
+            width: 100%;
+
+            &__section{
+                width: 100%;
+                max-width: none;
+                margin-top: 30px;
+                padding: 1rem 2rem;
+            }
+        }
+
+        &__floater{
+            width: 100% !important;
         }
     }
 }
@@ -119,15 +184,37 @@
     .c-header{
         padding-top: 140px; //mobile navbar is thinner, so this compensates for it and overrides the 80px on desktop
                            //80px navbar + 60px offset
-
         &__wrapper{
-            align-items: flex-end;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+
+            transition: 1s;
         }
+
+        &__info{
+            flex-direction: column;
+            height: floater-height($floater-width--desktop);
+            font-size: 0.96rem;
+            justify-content: space-between;
+        }
+        // &__info{
+        //     
+        //     flex-direction: column;
+        //     margin-top: 60px;
+        //     margin-right: 30px;
+        //     align-items: start;
+        //     justify-content: space-between;
+
+        //     &__section{
+        //         min-width: 220px;
+        //     }
+        // }
 
         &__floater{
             width: $floater-width--desktop;
             height: floater-height($floater-width--desktop);
-            padding: 3rem;
+            padding: 3rem 2rem;
 
             &__title{
                 // font-size: 2.4rem;
@@ -135,6 +222,39 @@
                 line-height: 1.6;
             }
         }
+    }
+}
+
+@media only screen and (min-width: 780px){
+    .c-header{
+        &__info{
+            flex-grow: 1;
+            align-items: flex-end;
+            margin-right: 60px;
+
+            &__section{
+                min-width: 220px;
+            }
+        }
+    }
+}
+
+@include for-tablet-landscape-up{
+    .c-header{
+        // &__wrapper{
+        //     align-items: flex-end;
+        //     flex-direction: row;
+        // }
+
+        // &__info{
+        //     flex-direction: column;
+        //     justify-content: space-between;
+        //     flex-grow: 1;
+        //     align-items: end;
+        //     margin-right: 60px;
+
+            
+        // }
     }
 }
 
