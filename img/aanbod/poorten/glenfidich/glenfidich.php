@@ -1,3 +1,0 @@
-<p class="c-about__section__content__paragraph">
-Open model profielen van 60 – 80 – 100 – 140 mm en tussenruimte naar keuze, de profielen kunnen zowel horizontaal als verticaal gemonteerd worden tussen de palen en vleugels word steeds een L profiel bevestigd zodat de scharnieren niet zichtbaar zijn vanaf de straatkant. Zoals al onze modellen kan deze zowel als vleugel en schuifpoort geproduceerd worden. Manueel of geautomatiseerd.
-</p>

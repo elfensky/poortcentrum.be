@@ -7,22 +7,18 @@
                     <h2>Sitemap</h2>
                     <ul class="c-footer__tree__list">
                         <li><a href="index.php">Home</a></li>
-                        <li><a href="aanbod.php">Aanbod</a></li>
+                        <li>Aanbod</li>
                             <ul class="c-footer__tree__list c-footer__tree__list--indented">
-                                <li><a href="aanbod.php#poorten">Poorten</a></li>
-                                <li><a href="aanbod.php#poorten">Automatisatie</a></li>
-                                <li><a href="aanbod.php#poorten">Tuinpoorten</a></li>
-                                <li><a href="aanbod.php#poorten">Afsluitingen</a></li>
-                                <li><a href="aanbod.php#poorten">Hekken</a></li>
-                                <li><a href="aanbod.php#carports">Carports</a></li>
-                                <li><a href="aanbod.php#schuifwanden">Glazen schuifwanden</a></li>
-                                <li><a href="aanbod.php#terrasoverkappingen">Terrasoverkappingen</a></li>
-                                <!-- <li><a href="aanbod.php#custom">Poolhouse</a></li> -->
+                                <li><a href="/poorten">Poorten</a></li>
+                                <li><a href="/automatisatie">Automatisatie</a></li>
+                                <li><a href="/afsluitingen">Afsluitingen</a></li>
+                                <li><a href="/carports">Carports</a></li>
+                                <li><a href="/schuifwanden">Glazen schuifwanden</a></li>
+                                <li><a href="/terras">Terrasoverkappingen</a></li>
                             </ul>
                         </li>
                         <li><a href="about.php">Over ons</a></li>
-                        <li><a href="index.php#gallery">Galerij</a></li>
-                        <li><a href="index.php#contact">Contact</a></li>
+						<li><a href="index.php#contact">Contact</a></li>
                     </ul>
                 </div>
 
@@ -32,9 +28,9 @@
                     <div>
                         <h3>Info</h3>
                         <ul>
-                            <li>Herseltsesteenweg 268<br>3200 Aarschot</li>
-                            <li>+32 479 57 37 02</li>
-                            <li>info@poortcentrum.be</li>
+                            <li><a href="https://g.page/poortcentrum?share">Herseltsesteenweg 268<br>3200 Aarschot</a></li>
+                            <li><a href="tel:+32479573702">+32 479 57 37 02</a></li>
+							<li><a href="mailto:info@poortcentrum.be">info@poortcentrum.be</a></li>
                         </ul>
                     </div>
                     <div>
@@ -56,38 +52,28 @@
                     <h2>Sociaal</h2>
 
                     <div class="c-contact__right__social c-footer__extra__social">
-                        <a href="#"><i class="c-contact__right__social__icon fab fa-instagram"></i></a>
-                        <a href="#"><i class="c-contact__right__social__icon fab fa-facebook-square"></i></a>
-                        <a href="#"><i class="c-contact__right__social__icon fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/poortcentrum"><i class="c-contact__right__social__icon fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/poortcentrum"><i class="c-contact__right__social__icon fab fa-facebook-square"></i></a>
+                        <a href="https://twitter.com/poortcentrum"><i class="c-contact__right__social__icon fab fa-twitter"></i></a>
                         <a href="https://wa.me/32479573702"><i class="c-contact__right__social__icon fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
             
             <span class="c-footer__copyright">
+				<a href="https://www.iubenda.com/privacy-policy/87951302" class="iubenda-white iubenda-embed" title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+				<br>
                 Poortcentrum™ and its logo are registered trademarks <br>
-                © 2020 - Andrei Lavrenov
+                © <?php echo date("Y"); ?> - <a style="color:lightgray;" href="https://lavrenov.io">Andrei Lavrenov</a>
             </span>
         </div>
     </section>
 
     <!-- scripts  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/b5152dcdcb.js" crossorigin="anonymous"></script>
     <script src="js/nav.js"></script>
     <script src="js/fancybox.min.js"></script>
-    <!-- <script src="js/pig.min.js"></script>
-    <script src="js/pig.config.js"></script> -->
-    <!-- <script src='https://www.hCaptcha.com/1/api.js' async defer></script> -->
-    <script src="https://www.google.com/recaptcha/api.js?render=6Lf8wuwUAAAAAMyN77uDNVahwr7fdpvE3RIEqjwz"></script>
-    <script>
-        grecaptcha.ready(function () {
-            grecaptcha.execute('6Lf8wuwUAAAAAMyN77uDNVahwr7fdpvE3RIEqjwz', { action: 'contact' }).then(function (token) {
-                var recaptchaResponse = document.getElementById('recaptchaResponse');
-                recaptchaResponse.value = token;
-            });
-        });
-    </script>
 </body>
 
 </html>

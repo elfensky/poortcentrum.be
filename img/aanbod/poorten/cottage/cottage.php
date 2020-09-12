@@ -1,3 +1,0 @@
-<p class="c-about__section__content__paragraph">
-De cottage is een klassiek model wat in vele varianten volledig gepersonaliseerd kan worden naar uw wensen. Kruisjes in verschillende profiel breedte met en zonder verticale tussen profielen, afhankelijk van de breedte. Onderaan open me tussenruimte naar uw keuze, of met Planchetten van 100 of 200 mm breed, met en zonder winglets tussen de palen en vleugels word steeds een L profiel bevestigd zodat de scharnieren niet zichtbaar zijn vanaf de straatzijde. Zoals al onze modellen kan deze zowel als vleugel en schuifpoort geproduceerd worden. Manueel of geautomatiseerd.
-</p>

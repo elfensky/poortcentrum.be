@@ -5,6 +5,9 @@
     &__texture{
         &--home{
             background-image: url("../img/home/header--home.jpg"); //set the bg img
+            
+            background-size: auto;
+            filter: none;
         }
 
         &--aanbod{
@@ -13,7 +16,15 @@
 
         &--about{
             background-image: url("../img/about/header--about.jpg");
-        }
+		}
+		
+		&--email{
+            background-image: url("../img/about/header--about.jpg");
+		}
+		
+		&--contact{
+			background-image: url("../img/home/contact.png");
+		}
     }
 
     &--short{
@@ -23,8 +34,9 @@
     }
 
     &__info{
-        display: flex;
-        
+        display: none;
+        // display: flex;
+        // visibility: hidden;
 
         &__section{
             border-top: 4px solid $color-secondary;
@@ -57,7 +69,7 @@
 
     &__floater{
         // border-top: 4px solid $color-secondary;
-        background-color: white;
+        background-color: rgba(white, $opacity-overlay);
         transition: 1s;
         display: flex;
 
@@ -194,7 +206,7 @@
 
         &__info{
             flex-direction: column;
-            height: floater-height($floater-width--desktop);
+            // height: floater-height($floater-width--desktop);
             font-size: 0.96rem;
             justify-content: space-between;
         }
@@ -213,8 +225,8 @@
 
         &__floater{
             width: $floater-width--desktop;
-            height: floater-height($floater-width--desktop);
-            padding: 3rem 2rem;
+            // height: floater-height($floater-width--desktop);
+            padding: 2rem;
 
             &__title{
                 // font-size: 2.4rem;
@@ -240,7 +252,7 @@
 }
 
 @include for-tablet-landscape-up{
-    .c-header{
+    // .c-header{
         // &__wrapper{
         //     align-items: flex-end;
         //     flex-direction: row;
@@ -255,7 +267,7 @@
 
             
         // }
-    }
+    // }
 }
 
 @include for-desktop-up {

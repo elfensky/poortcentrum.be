@@ -25,17 +25,20 @@
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
-//home page
+//index
+@import 'component.c.header'; //heading with cta
+
 @import 'component.nav.bar'; //navigation desktop
 @import 'component.nav.slide'; //navigation mobile
 @import 'component.nav.hamburger'; //animated hamburger icon
-@import 'component.c.header'; //heading with cta
+
+
 @import 'component.c.description'; //short about us description
 @import 'component.c.approach'; //a 3-card info section
 @import 'component.c.gallery'; //gallery of completed works
-@import 'component.c.numbers'; //showing off numbers
 @import 'component.c.reviews'; //showing off reviews
 @import 'component.c.contact'; //contact section with info & form
+
 @import 'component.c.footer'; //footer
 
 //page aanbod
@@ -43,18 +46,6 @@
 
 //page model
 @import 'component.p.model';
-
-//page about
-// @import 'component.about'; //about page.
-
-
-
-//page offers
-// @import 'component.c.shop'; //offers page with pre-designed models
-
-//RESPONSIVE
-// @import 'components.responsive'; //desktop & tablet scaling
-// @import 'components.mobile'; //phones
 
 /*------------------------------------*\
   #UTILITIES

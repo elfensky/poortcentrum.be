@@ -93,7 +93,12 @@
         background-repeat: no-repeat;
 
         text-align: center;
-        position: relative;
+		position: relative;
+		
+		&__img{
+			// max-width: none;
+			width: 100% !important;
+		}
 
         // &--nolink{
         //     padding-top: 34%;
@@ -153,7 +158,7 @@
         }
 
         &__card{
-            pointer-events: none;
+            // pointer-events: none;
         }
 
         &__cloud{
@@ -214,9 +219,6 @@
 
         &__production{
             column-count: 3;
-            column-fill: auto;
-            // min-height: 240px;
-            max-height: 220px;
 
             &__img{
 
