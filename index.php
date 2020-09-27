@@ -47,8 +47,8 @@
 </header>
 
 <section style="background-color: #FC4A1A; padding: 1rem 4rem;" class="scrollify o-section">
-	<div>
-		In september <span style="font-weight:600;">verhuizen</span> wij naar een nieuwe locatie waar zowel het toonpark als de productie zich onder één dak bevinden. Nieuw adres: <span style="font-weight:600;">Liersesteenweg 33, 2221 Booischot</span>
+	<div style="font-size: 1.33rem;">
+		<span style="font-weight:600;">Wij zijn verhuist!</span> Onze nieuwe adres is <a style="color:black;" class="u-link" href="https://goo.gl/maps/w6BuQWFCL9bY2g5H8"><span style="font-weight:600;">Liersesteenweg 33, 2221 Booischot.</span></a>
 	</div>
 </section>
 

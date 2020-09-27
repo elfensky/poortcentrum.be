@@ -50,7 +50,7 @@
 	<div class="c-nav__info__item">
 		<a class="c-nav__info__link" href="https://g.page/poortcentrum?share">
 			<i class="fal fa-map-marker"></i>
-            <span>Herseltsesteenweg 268, 3200 Aarschot</span>
+            <span>Liersesteenweg 33, 2221 Booischot</span>
         </a>
 	</div>
 	<div class="c-nav__info__item">

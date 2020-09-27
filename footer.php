@@ -28,7 +28,7 @@
                     <div>
                         <h3>Info</h3>
                         <ul>
-                            <li><a href="https://g.page/poortcentrum?share">Herseltsesteenweg 268<br>3200 Aarschot</a></li>
+                            <li><a href="https://goo.gl/maps/w6BuQWFCL9bY2g5H8">Liersesteenweg 33<br>2221 Booischot</a></li>
                             <li><a href="tel:+32479573702">+32 479 57 37 02</a></li>
 							<li><a href="mailto:info@poortcentrum.be">info@poortcentrum.be</a></li>
                         </ul>

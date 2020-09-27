@@ -17,8 +17,8 @@
             </div>
             <div class="c-contact__right__info">
                 <div class="c-contact__right__info__section">
-                    <a class="c-contact__right__info__section__text" href="https://g.page/poortcentrum?share">
-                        <div style="margin-right:1rem;">Herseltsesteenweg 268<br>3200 Aarschot</div>
+					<a class="c-contact__right__info__section__text" href="https://goo.gl/maps/w6BuQWFCL9bY2g5H8">
+                        <div style="margin-right:1rem;">Liersesteenweg 33<br>2221 Booischot</div>
                         <i style="font-size: 2rem;" class="fal fa-map-marker-alt"></i>
                     </a>
                 </div>
