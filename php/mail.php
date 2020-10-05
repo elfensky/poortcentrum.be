@@ -33,7 +33,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	
 	//PHPMailer Object
 	$mail = new PHPMailer(true); //Argument true in constructor enables exceptions
-
+	$mail->CharSet = 'UTF-8';
+	
 	//From email address and name
 	$mail->From = "form@poortcentrum.be";
 	$mail->FromName = $name;
