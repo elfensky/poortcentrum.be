@@ -1,5 +1,5 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171043323-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171043323-1"></script>
 <script type='text/javascript'>
 	window.dataLayer = window.dataLayer || [];
 
@@ -26,4 +26,4 @@
 		h.appendChild(c);
 	})(document);
 	smartlook('init', 'eeb7f19e05ad2be0b5d643b81577d7ccf23e3eb5');
-</script> -->
+</script>

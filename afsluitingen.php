@@ -83,6 +83,9 @@
 							<div class='c-about__card__overlay'>
 									<h2 class='c-about__card__title'>" . $gate_name . "</h2>
 							</div>
+							<div class='c-about__card__cta'>
+									<h2 class='c-about__card__subtitle'>Bekijk meer</h2>
+							</div>
 						</a>\n";
 					}
 					?>
