@@ -115,6 +115,33 @@
             // height: 100%;
         }
 
+		&__cta{
+			position: absolute;
+            width: content;
+            text-align: right;
+            background-color: rgb(33, 33, 33);
+			bottom: 0;
+			right: 0;
+
+			
+		}
+
+		&__subtitle{
+			// color: $color-primary;
+            // color: $color-secondary;
+            color: white;
+            padding: 0 0.5rem;
+
+            // background-image: url(../img/home/description.png);
+            background-position: center;
+            background-size: cover;
+            -webkit-text-fill-color: rgba(255,255,255,0.9);
+            // -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            font-size: 1.5rem;
+		}
+
         &__title{
             // color: $color-primary;
             // color: $color-secondary;
@@ -132,7 +159,15 @@
         }
     }
 
-    
+    &__card:hover{
+        opacity: 0.85;
+		transition: 0.2s all ease-in-out;
+		
+		.c-about__card__cta{
+			background-color: $color-secondary;
+			transition: 0.2s all ease-in-out;
+		}
+    }
 }
 
 

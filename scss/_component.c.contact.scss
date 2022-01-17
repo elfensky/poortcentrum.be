@@ -26,12 +26,27 @@
         flex-direction: column;
         justify-content: space-between;
         flex-grow: 1;
+		
+		&__section{
+			display:flex; 
+			flex-direction: row;
+			justify-content: space-between;
+		}
 
         &__input{
             border: none;
             background-color: #eee;
             padding: 0.25rem;
             margin-bottom: 1rem;
+			// flex-grow: 1;
+			
+			&--medium {
+				width: 60%;
+			}
+
+			&--short {
+				width: 35%;
+			}
         }
 
         &__textarea{

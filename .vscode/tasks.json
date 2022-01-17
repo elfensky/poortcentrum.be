@@ -6,7 +6,7 @@
         {
             "label": "activate SASS @ style.scss",
             "type": "shell",
-            "command": "sass --watch scss:css",
+            "command": "npx sass --watch scss:css",
             "group": {
                 "kind": "build",
                 "isDefault": true

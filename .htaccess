@@ -1,26 +1,45 @@
 RewriteEngine On
 Options +FollowSymLinks
 
-## REMOVE WWW & FORCE HTTPS
+# REDIRECT DEMO.POORTCENTRUM TO /404
+# Legacy to redirect old search engine links to new website
+RewriteCond %{HTTP_HOST} ^demo\.poortcentrum\.be
+RewriteRule ^(.*)$ 404/%1/$1 [L,NC,QSA]
+
+# # ## REMOVE WWW & FORCE HTTPS
 # RewriteCond %{HTTP_HOST} ^www\.(.*)$ [OR]
 # RewriteCond %{https} off
 # RewriteRule ^(.*)$ https://poortcentrum.be/$1 [R=301,L]
 
-## REMOVE PHP EXTENSION
-# browser requests PHP
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.php
-RewriteRule ^/?(.*)\.php$ /$1 [L,R=301]
-# check to see if the request is for a PHP file:
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^/?(.*)$ /$1.php [L]
+# # ## REMOVE PHP EXTENSION
 
-#PRETTY URL
+# # ## browser requests PHP
+# RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.php
+# RewriteRule ^/?(.*)\.php$ /$1 [L,R=301]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule (.*) $1.php [L]
+
+
+# # # POST MSG FIX
+# # RewriteCond %{REQUEST_METHOD} POST
+# # RewriteRule ^ - [L]
+
+# # # check to see if the request is for a PHP file:
+# RewriteCond %{REQUEST_FILENAME}\.php -f
+# #RewriteRule ^(.*)/?$ $1.php
+# RewriteRule ^/?(.*)$ /$1.php [L]
+
+#PRETTY URL FOR GATES
 RewriteRule ^poort/([a-zA-Z0-9_-]*)$ poort/model?type=$1
+#PRETTY URL FOR LOCATIONS
+RewriteRule ^locatie/([a-zA-Z0-9_-]*)$ locatie/locatie?type=$1
 
-
-#INDEX REDIRECT
+# # #INDEX REDIRECT
 # RewriteCond %{THE_REQUEST} ^.*/index
 # RewriteRule ^(.*)index.php$ https://poortcentrum.be [R=301,L]
 
-#ERROR PAGES
-# ErrorDocument 404 https://poortcentrum.be/404
+# #Custom 400 errors
+ErrorDocument 404 https://poortcentrum.be/404
+ErrorDocument 500 https://poortcentrum.be/404

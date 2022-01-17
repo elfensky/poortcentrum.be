@@ -880,6 +880,7 @@ h3 {
 .c-approach__card__icon {
   width: 8rem !important;
   height: 8rem !important;
+  font-size: 6rem;
   color: #000;
 }
 .c-approach__card__text {
@@ -993,11 +994,22 @@ h3 {
   justify-content: space-between;
   flex-grow: 1;
 }
+.c-contact__form__section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .c-contact__form__input {
   border: none;
   background-color: #eee;
   padding: 0.25rem;
   margin-bottom: 1rem;
+}
+.c-contact__form__input--medium {
+  width: 60%;
+}
+.c-contact__form__input--short {
+  width: 35%;
 }
 .c-contact__form__textarea {
   min-height: 150px;
@@ -1214,6 +1226,20 @@ h3 {
     padding: 0.25rem;
   }
 }
+.c-seo .o-padding-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.c-seo__subtitle {
+  margin-top: 1em;
+}
+
+.c-address {
+  background-color: #FC4A1A;
+  padding: 1rem 4rem;
+}
+
 .c-footer {
   background-color: #272727;
   color: white;
@@ -1335,6 +1361,24 @@ h3 {
   text-align: left;
   background-color: #FC4A1A;
 }
+.c-about__card__cta {
+  position: absolute;
+  width: content;
+  text-align: right;
+  background-color: #212121;
+  bottom: 0;
+  right: 0;
+}
+.c-about__card__subtitle {
+  color: white;
+  padding: 0 0.5rem;
+  background-position: center;
+  background-size: cover;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 1.5rem;
+}
 .c-about__card__title {
   color: white;
   padding: 0 0.5rem;
@@ -1344,6 +1388,14 @@ h3 {
   -webkit-background-clip: text;
   background-clip: text;
   font-size: 1.5rem;
+}
+.c-about__card:hover {
+  opacity: 0.85;
+  transition: 0.2s all ease-in-out;
+}
+.c-about__card:hover .c-about__card__cta {
+  background-color: #FC4A1A;
+  transition: 0.2s all ease-in-out;
 }
 
 @media (max-width: 599px) {
@@ -1450,6 +1502,10 @@ h3 {
 }
 .u-link:hover {
   color: #000;
+}
+
+.u-orange {
+  color: #FC4A1A;
 }
 
 /*# sourceMappingURL=style.css.map */
