@@ -38,7 +38,7 @@
 						een realiteit
 					</h1>
 					<div class="c-header__subtitle">
-						Bij ons krijg je u aluminium projecten op maat gerealiseerd. Wij maken o.a. <a href="poorten.php">poorten</a>, <a href="afsluitingen.php">afsluitingen</a>, <a href="carports.php">carports</a>, <a href="schuifwanden.php">schuifwanden</a>, <a href="terrasoverkappingen.php">terras overkappingen</a> en hekken.
+						Bij ons krijgt u uw aluminium projecten op maat gerealiseerd. Wij maken o.a. <a href="poorten.php">aluminium poorten</a>, <a href="afsluitingen.php">afsluitingen</a>, <a href="carports.php">carports</a>, <a href="schuifwanden.php">schuifwanden</a>, <a href="terrasoverkappingen.php">terras overkappingen</a> en hekken.
 					</div>
 					<a class="c-header__cta" href="#contact">Vrijblijvende offerte</a>
 				</div>
@@ -81,16 +81,16 @@
 				</div>
 				<div class="c-description__info__text">
 					<p>
-						Wij zijn een ervaren fabrikant van aluminium tuin producten.
-						Sinds 2011 zijn we gestart met aluminium poorten & hekken. Dit is nog altijd onze hoofdactiviteit. We hebben dus meer dan 10 jaar ervaring opgebouwd.
+						Wij zijn een ervaren fabrikant van aluminium tuinproducten.
+						Sinds 2011 zijn we gestart met <a href="poorten.php">aluminium poorten</a> & hekken. Dit is nog altijd onze hoofdactiviteit. We hebben dus meer dan 10 jaar ervaring opgebouwd.
 					</p>
 				</div>
 
 				<ul class="c-description__info__list">
-					<li><a href="poorten.php">Poorten</a>, Hekken & Afsluitingen van aluminium, met of ook zonder automatisatie</li>
+					<li><a href="poorten.php">Aluminium poorten</a>, en <a href="https://poortcentrum.be/afsluitingen">hekken & afsluitingen</a>, met of zonder <a href="https://poortcentrum.be/automatisatie">automatisatie</a></li>
 					<li class="c-description__info__list--item"><a href="carports.php">Carports</a> met vlak of gebogen dak en verschillende dakbedekkingen.</li>
 					<li>Met of zonder geïntegreerd berghok.</li>
-					<li>Om het geheel aan maar ook rondom huis compleet te maken hebben wij onlangs onze productie eveneens uitgebreid met <a href="terrasoverkappingen.php">terrasoverkappingen</a> en
+					<li>Om het geheel aan maar ook rondom huis compleet te maken hebben wij onlangs onze productie uitgebreid met <a href="terrasoverkappingen.php">terrasoverkappingen</a> en
 						<a href="schuifwanden.php">glazen schuifwanden</a>.
 					</li>
 					<li>Bekijk ons aanbod om u een idee te geven van onze verschillende modellen,
@@ -100,7 +100,7 @@
 
 				<div class="c-description__linkgroup">
 					<a class="c-description__link" href="/overons"><i class="c-description__icon fal fa-people-carry"></i> Ondek meer over ons</a>
-					<a class="c-description__link c-description__link--middle" href="/troeven"><i class="c-description__icon fal fa-trumpet"></i> Onze Troeven</a>
+					<a class="c-description__link c-description__link--middle" href="/troeven"><i class="c-description__icon fal fa-trumpet"></i> Onze troeven</a>
 					<a class="c-description__link" href="/productie"><i class="c-description__icon fal fa-tools"></i> Productie</a>
 				</div>
 
@@ -123,7 +123,7 @@
 				<div class="c-approach__card-info">
 					<h2 class="c-approach__card-title">ONZE TROEVEN</h2>
 					<div class="c-approach__card__text">
-						Waarom een product van Poortcentrum ook de juiste keuze is.
+						Waarom een product van Poortcentrum ook voor u de juiste keuze is.
 					</div>
 					<a class="c-approach__link u-link" href="/troeven">Lees meer</a>
 				</div>
@@ -134,7 +134,7 @@
 				<div class="c-approach__card__info">
 					<h2 class="c-approach__card__title">PRODUCTIE</h2>
 					<div class="c-approach__card__text">
-						Kies een bestaande model of stuur oks ook gerust een foto of een e-mail met jouw idee.
+						Kies een bestaand model of stuur ons ook gerust een foto of een e-mail met jouw idee.
 					</div>
 					<a class="c-approach__link u-link" href="/productie">Lees meer</a>
 				</div>
@@ -145,7 +145,7 @@
 				<div class="c-approach__card__info">
 					<h2 class="c-approach__card__title">ONS AANBOD</h2>
 					<div class="c-approach__card__text">
-						<a class="c-approach__link u-link" href="/poorten">Poorten</a>
+						<a class="c-approach__link u-link" href="/poorten">Aluminium poorten</a>
 						<a class="c-approach__link u-link" href="/automatisatie">Automatisatie</a>
 						<a class="c-approach__link u-link" href="/afsluitingen">Afsluitingen</a>
 						<a class="c-approach__link u-link" href="/carports">Carports</a>

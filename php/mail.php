@@ -16,9 +16,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	$gemeente = htmlspecialchars($_POST["gemeente"]);
 	$postcode = htmlspecialchars($_POST["postcode"]);
 	$textarea = htmlspecialchars($_POST["message"]);
-
-	$onderwerp = "Bericht van " . $name . " in " . $gemeente .  " | (via formulier)";
-
+	$onderwerp = "Bericht van " . $name . " in " . $gemeente .  " (via formulier)";
+	
+	date_default_timezone_set('Europe/Brussels');
+    $time = date('m/d/Y H:i');
 	// //CAPTCHA
 	// $response = $_POST["g-recaptcha-response"];
 	// $url = 'https://www.google.com/recaptcha/api/siteverify';
@@ -45,6 +46,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 	//To address and name
 	$mail->addAddress("info@poortcentrum.be", "Eugeen Bosmans");
+    $mail->addBCC("poortcentrum@lavrenov.io", "poortcentrum@lavrenov.io");
+
 
 	//Address to which recipient will reply
 	$mail->addReplyTo($email, $name);
@@ -58,11 +61,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 	$mail->Subject = $onderwerp;
 	$mail->Body = "<p>$textarea</p>
-					<p>Persoon: $name<br/>
-					Email: $email<br/>
-					Tijd: " . date('m/d/Y h:i') . "<br/>
-					Locatie: $gemeente | $postcode</p>";
-	$mail->AltBody = "$textarea | van: $name, via $email op " . date('m/d/Y h:i');
+					<p>
+					    Persoon: $name<br/>
+    					Email: $email<br/>
+    					Locatie:  $postcode | $gemeente<br/>
+    					Tijd: $time<br/>
+					</p>";
+	$mail->AltBody = "$textarea \n| van $name in $postcode $gemeente, via $email om $time";
 
 	try {
 		$mail->send();

@@ -44,7 +44,7 @@
 				<div class="c-about__section__content__text">
 					<p class="c-about__section__content__paragraph">Op basis van onze poorten kunnen we voor u ook afsluitingen of hekken bouwen zodat u kan genieten van een samenhangende atmosfeer in uw tuin.
 						Wij produceren zowel minimalistische en moderne als klassieke retro modellen in <span style="font-weight:600;">100% aluminium</span>.
-						Deze worden volledig op maat geproduceerd op dezelfde kwalitatieve manier als onze poorten.
+						Deze worden volledig op maat geproduceerd op dezelfde kwalitatieve manier als onze <a class="u-link" href="https://poortcentrum.be/poorten">aluminium poorten</a>.
 					</p>
 
 					<p class="c-about__section__content__paragraph">

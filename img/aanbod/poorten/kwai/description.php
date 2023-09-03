@@ -8,4 +8,4 @@ elkaar gemonteerd word is afhankelijk van de gewenste hoogte.</p>
 Zoals al onze modellen kan deze zowel als vleugelpoort, schuifpoort of hekwerk
 geproduceerd worden.
 Om een perfecte afregeling te kunnen garanderen gebruiken wij bij onze
-draaipoorten steeds 3D scharnieren.</p>
+<a class="u-link" href="https://poortcentrum.be/poorten">draaipoorten</a> steeds 3D scharnieren.</p>

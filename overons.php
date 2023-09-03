@@ -49,7 +49,7 @@
 						Wij zijn een metaalverwerkend bedrijf met een passie om van een aluminium profiel
 						iets moois en functioneel te produceren.
 						Sinds 2008 zijn we gestart met nog altijd onze hoofdactiviteit de productie van
-						aluminium poorten &amp; hekken op maat. Aan de hand van het gewenste model en de
+						<a class="u-link" href="https://poortcentrum.be/poorten">aluminium poorten</a> &amp; hekken op maat. Aan de hand van het gewenste model en de
 						situatie van uw woning bespreken we steeds samen de beste optie voor installatie
 						van uw tuinpoort en omdat 1 cm meer of minder grote gevolgen kan hebben bij
 						maatwerk komen ook steeds alles ter plaatse opmeten voor de productie gestart
@@ -58,7 +58,7 @@
 
 					<p class="c-about__section__content__paragraph">
 						Omdat onze doelstelling was om diverse functionele aluminium producten te
-						produceren hebben we nadien carports aan ons assortiment toegevoegd. Deze
+						produceren hebben we nadien <a class="u-link" href="https://poortcentrum.be/carports">carports</a> aan ons assortiment toegevoegd. Deze
 						worden geproduceerd met plat of gebogen dak en steeds op maat gemaakt, zowel
 						aangebouwd aan de woning of geheel vrijstaand al dan niet gekoppeld als dubbele
 						carport met open, half gesloten of volledig gesloten zijwanden in aluminium profielen
@@ -67,7 +67,7 @@
 
 					<p class="c-about__section__content__paragraph">
 						Geïntegreerde bergplaats met afsluitbare deur behoord tevens tot de mogelijkheden.
-						Sinds enkele jaren kan u voor uw terrasoverkapping ook bij ons terecht Volgens de
+						Sinds enkele jaren kan u voor uw <a class="u-link" href="https://poortcentrum.be/terrasoverkappingen">terrasoverkapping</a> ook bij ons terecht Volgens de
 						wensen van de klant zijn er verschillende type’s leverbaar, dit gaat van een
 						eenvoudige overkapping met open zijwanden en polycarbonaat platen al dan niet
 						zonwerend tot een volledig afgesloten veranda met een dak van veiligheidsglas en

@@ -6,8 +6,8 @@
 	<?php require("php/head.php"); ?>
 
 	<!-- SEO  -->
-	<title>Aluminium Poorten | Draaipoorten | Schuifpoorten | Booischot en ruime omgeving</title>
-	<meta name="description" content="Een catalogus van onze aluminium poorten. Draaipoorten en schuifpoorten met of zonder automatisatie.">
+	<title>Aluminium poorten | Draaipoorten | Schuifpoorten | Tuinpoorten</title>
+	<meta name="description" content="Ontdek de aluminium poorten van Poortcentrum. Draaipoorten en schuifpoorten met of zonder automatisatie. In heel Vlaanderen.">
 	<link rel="canonical" href="https://poortcentrum.be/poorten" />
 </head>
 
@@ -37,7 +37,7 @@
 		<div class="o-padding-wrapper">
 			<article class="c-about__section__content">
 				<h2 class="c-about__section__content__title">ALUMINIUM POORTEN</h2>
-				<h3 class="c-description__info__subtitle">AUTOMATISATIE, TUINPOORTEN, AFSLUITINGEN, HEKKENS</h3>
+				<h3 class="c-description__info__subtitle">AUTOMATISATIE, TUINPOORTEN, AFSLUITINGEN, HEKKENS, CARPORTS</h3>
 				<div class="c-description__info__line">
 					<div class="u-line"></div>
 					<div class="u-line--short"></div>

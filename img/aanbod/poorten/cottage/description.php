@@ -8,7 +8,7 @@ Voor het frame gebruiken we steeds monoblok profielen van 100 mm breedte,
 Kruisjes bovenaan, en onderaan hebt u keuze uit 60 – 80 – 100 of 140 mm breede
 verticale profielen met spatie’s naar keuze in optie kan er achter de verticaal
 opstaande profielen een volledig gesloten aluminium plaat gemonteerd worden zodat
-u toch de verticale spijlen hebt maar uw poort onderaan volledig gesloten is.
+u toch de verticale spijlen hebt maar uw <a class="u-link" href="https://poortcentrum.be/poorten">poort</a> onderaan volledig gesloten is.
 Gesloten Planchetten van 100 of 200 mm breed behoren tevens tot de mogelijkheid.
 </p>
 

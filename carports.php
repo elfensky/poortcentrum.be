@@ -48,10 +48,10 @@
 
 					<p class="c-about__section__content__paragraph">
 						Al onze carports worden op maat gemaakt en zijn leverbaar als aanbouw of vrijstaande
-						constructie, De hemelwater afvoerbuizen worden steeds in de palen geïntegreerd.</p>
+						constructie. De hemelwater afvoerbuizen worden steeds in de palen geïntegreerd.</p>
 
 					<p class="c-about__section__content__paragraph">Indien gewenst kunnen er zijwanden ingewerkt worden volgens model van de
-						poorten of met hout, geintegreerd berghok met afsluitbare deur behoord tevens tot
+						<a class="u-link" href="https://poortcentrum.be/poorten">poorten</a> of met hout, geintegreerd berghok met afsluitbare deur behoord tevens tot
 						de mogelijkheden. Ledstrips met bewegingsmelder kunnen geïnstalleerd worden.</p>
 				</div>
 				<div class="c-about__gallery c-about__gallery--odd">

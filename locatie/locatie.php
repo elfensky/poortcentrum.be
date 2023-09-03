@@ -223,7 +223,7 @@
 				<div class="c-footer__tree">
 					<h2>Sitemap</h2>
 					<ul class="c-footer__tree__list">
-						<li><a href="index.php">Home</a></li>
+						<li><a href="/index.php">Home</a></li>
 						<li>Aanbod</li>
 						<ul class="c-footer__tree__list c-footer__tree__list--indented">
 							<li><a href="/poorten">Poorten</a></li>

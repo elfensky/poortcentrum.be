@@ -1,7 +1,7 @@
 <p class="c-about__section__content__paragraph">
     <h3>BASSENTO</h3>
 	Strak, vlak, minimalistisch en privacy zijn de troeven van het model Bassento.
-	Een volledig gesloten poort met een frame van 60 x 40 mm met verschillende aluminium platen van
+	Een volledig gesloten <a class="u-link" href="https://poortcentrum.be/poorten">aluminium poort</a> met een frame van 60 x 40 mm met verschillende aluminium platen van
 	3 mm boven elkaar met een tussenruimte van +- 10 mm vooraan op het frame
 	gemonteerd zonder zichtbare lasnaden.<br>
 	Tussen de palen en vleugels word steeds een L profiel gemonteerd tegen inkijk.

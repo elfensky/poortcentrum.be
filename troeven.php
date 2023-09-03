@@ -55,8 +55,7 @@
 					<p class="c-about__section__content__paragraph">Kwaliteit voor een eerlijke prijs</p>
 					<p class="c-about__section__content__paragraph">Maatwerk</p>
 					<p class="c-about__section__content__paragraph">Duidelijke totaal offerte zonder kleine lettertjes</p>
-					<p class="c-about__section__content__paragraph">Tevens garanderen wij dat indien u een aluminium poort koopt bij
-						Poortcentrum u een volledige aluminium poort krijgt, zowel palen, frame,
+					<p class="c-about__section__content__paragraph">Tevens garanderen wij dat indien u een <a class="u-link" href="https://poortcentrum.be/poorten">aluminium poort</a> koopt bij Poortcentrum u een volledige aluminium poort krijgt, zowel palen, frame,
 						vulling als scharnieren alles word bij ons uit aluminium geproduceerd.</p>
 
 					<!-- <p class="c-about__section__content__paragraph">

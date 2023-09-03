@@ -47,16 +47,16 @@
 						kwaliteit en degelijkheid bewezen heeft.
 						<br>
 						<br>
-						Wij installeren ook steeds motors van een
+						Wij installeren ook steeds motoren van een
 						type zwaarder lees sterker dan noodzakelijk is zodat deze nooit maximaal belast
 						worden wat de levensduur en werking alleen ten goede komt.
 						In onze sturing zit standaard een “loopfunctie“ ingebouwd zodat u de optie hebt van 1 vleugel apart of
 						beide samen te openen. Onze automatisaties zijn met de meeste garagedeur motors
-						compatiebel.
+						compatibel.
 						<br>
 						<br>
 						Als extra service naar onze klant toe plaatsen wij steeds een noodbatterij in de
-						sturing zodat bij eventuele elektrische panne u nog steeds uw poort kan openen. Dit
+						sturing zodat bij eventuele elektrische panne u nog steeds uw <a class="u-link" href="https://poortcentrum.be/poorten">poort</a> kan openen. Dit
 						kan zowel bij draaipoorten als schuifpoorten.
 				</div>
 

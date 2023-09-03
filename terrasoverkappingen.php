@@ -45,7 +45,7 @@
 					</div>
 					<div class="c-about__section__content__text">
 						<p class="c-about__section__content__paragraph">
-							Terrasoverkappingen in aluminium draag constructie’s met polycarbonaat platen of glas als dakbedekking transparant of zonwerend, als optie’s kan ledverlichting ingebouwd, worden en om het geheel compleet te maken bieden wij deze eveneens aan met <a href="schuifwanden.php">glazen schuifwanden</a> zodat u bij minder zonnige dagen op een comfortabele manier van het buitenleven kan blijven genieten.
+							Terrasoverkappingen in aluminium draagconstructies met polycarbonaat platen of glas als dakbedekking transparant of zonwerend, als opties kan ledverlichting ingebouwd, worden en om het geheel compleet te maken bieden wij deze eveneens aan met glazen schuifwanden zodat u bij minder zonnige dagen op een comfortabele manier van het buitenleven kan blijven genieten.
 						</p>
 						<p class="c-about__section__content__paragraph">Een pool-house opgebouwd in dubbelwandige aluminium klik profielen van 100 – 200 of 400 mm hoog, al dan niet met <a href="schuifwanden.php">glazen schuifwanden</a>, onderhoud vrij waar het gezellig vertoeven is na een verfrissende duik, tevens leverbaar met geintegreerd berghok.</p>
 					</div>
