@@ -1,0 +1,14 @@
+{
+    "name": "poortcentrum.be",
+    "version": "1.0.0",
+    "description": "generate css from sass",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch './scss:./css'"
+    },
+    "author": "Andrei Lavrenov",
+    "license": "",
+    "devDependencies": {
+        "sass": "^1.66.1"
+    }
+}

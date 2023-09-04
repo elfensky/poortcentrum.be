@@ -40,50 +40,32 @@
 		</div>
 		<!-- floater  -->
 		<div class="c-contact__left">
-			<div class="c-contact__floater" style="height: fit-content;">
+			<div class="c-contact__floater">
 				<h1>CONTACT</h1>
 				<div class="c-description__info__line">
 					<div class="u-line"></div>
 					<div class="u-line--short"></div>
 				</div>
 
-				<!-- <form class="c-contact__form" id="myForm" name="contactform">
-                    <ul id="form-error-list" class="c-contact__form__errorlist"></ul>
+				<form class="c-contact__form" name="contactform" method="POST" action="bevestiging.php">
+					<input class="c-contact__form__input" type="text" id="fname" name="name" placeholder="Naam*" required />
 
-					<input class="c-contact__form__input" type="text" id="fname" name="name" placeholder="Naam*" autocomplete="name" required />
-
-					<input class="c-contact__form__input invalid" type="email" id="email" name="email" placeholder="Email*" autocomplete="email" required />
+					<input class="c-contact__form__input" type="email" id="email" name="email" placeholder="Email*" required />
 
 
 					<div class="c-contact__form__section">
-						<input class="c-contact__form__input c-contact__form__input--medium" type="text"  minlength="3" maxlength="30" id="gemeente" autocomplete="address-level3" name="gemeente" placeholder="Gemeente*" required />
-						<input class="c-contact__form__input c-contact__form__input--short" type="number" min="1000" max="9999" id="postcode" autocomplete="postal-code" name="postcode" placeholder="Postcode*" required />
+						<input class="c-contact__form__input c-contact__form__input--medium" type="text" id="gemeente" name="gemeente" placeholder="Gemeente*" required />
+						<input class="c-contact__form__input c-contact__form__input--short" type="number" id="postcode" name="postcode" placeholder="Postcode*" required />
 					</div>
 
-					<textarea class="c-contact__form__input c-contact__form__textarea" id="form_message" name="message" rows="6" placeholder="Bericht*" required></textarea>
+					<textarea class="c-contact__form__input c-contact__form__textarea" id="form_message" name="message" rows="6" placeholder="Bericht*" value="" required></textarea>
 
-					<input style="margin-top:1rem;" class="c-contact__form__submit" type="submit" name="submit" value="STUREN" />
-				</form> -->
-
-                <form class="c-contact__form" id="myForm" name="contactform">
-                    <ul id="form-error-list" class="c-contact__form__errorlist"></ul>
-
-					<input class="c-contact__form__input" type="text" id="fname" name="name" placeholder="Naam*" autocomplete="name"  />
-
-					<input class="c-contact__form__input invalid" type="email" id="email" name="email" placeholder="Email*" autocomplete="email"  />
-                    
-
-					<div class="c-contact__form__section">
-						<input class="c-contact__form__input c-contact__form__input--medium" type="text"  minlength="3" maxlength="30" id="gemeente" autocomplete="address-level3" name="gemeente" placeholder="Gemeente*"  />
-						<input class="c-contact__form__input c-contact__form__input--short" type="number" min="1000" max="9999" id="postcode" autocomplete="postal-code" name="postcode" placeholder="Postcode*"  />
-					</div>
-
-					<textarea class="c-contact__form__input c-contact__form__textarea" id="form_message" name="message" rows="6" placeholder="Bericht*" ></textarea>
+					<!-- <div class="g-recaptcha" data-sitekey="6Lft8bcZAAAAAOsBXmralOiJqLCw1fZglA1neklm"></div>
+					<script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 
 					<input style="margin-top:1rem;" class="c-contact__form__submit" type="submit" name="submit" value="STUREN" />
 				</form>
 			</div>
 		</div>
 	</div>
-	<script src="../js/form.js"></script>
 </section>

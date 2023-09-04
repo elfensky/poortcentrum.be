@@ -1,5 +1,5 @@
 //SETTINGS
-//only $variables come here. Fonts, Colors and other values. 
+//only $variables come here. Fonts, Colors and other values.
 //read more on https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/
 
 //Settings – used with preprocessors and contain font, colors definitions, etc.
@@ -44,13 +44,11 @@ $font--title-size: 2.4rem;
 // $color-primary: #4ABDAC;
 // $color-secondary: #FC4A1A;
 
-
 $color-primary: #000;
-$color-secondary: #FC4A1A;
+$color-secondary: #fc4a1a;
 
 // $color-primary: #1490D7;
 // $color-secondary: #FC4A1A;
-
 
 $opacity-overlay: 0.65;
 
@@ -59,7 +57,7 @@ $opacity-overlay: 0.65;
 // $color-primary--rgb: rgb(222, 100, 71);
 // $color-secondary: #1490D7;
 // $margins--desktop: 15rem;
-// $margins--tablet: 
+// $margins--tablet:
 
 // $floater-ratio: 0.72;
 $floater-width--desktop: 400px;
@@ -69,9 +67,8 @@ $floater-width--mobile: 300px;
     $result: calc($width / 0.72);
     @return round($result);
 }
-  
+
 //   .sidebar {
 //     float: left;
 //     margin-left: pow(4, 3) * 1px;
 //   }
-  

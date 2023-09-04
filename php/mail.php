@@ -7,7 +7,10 @@ require 'phpmailer6.1.7/src/Exception.php';
 require 'phpmailer6.1.7/src/PHPMailer.php';
 require 'phpmailer6.1.7/src/SMTP.php';
 
-// echo "test";
+// require 'phpmailer6.8.1/src/Exception.php';
+// require 'phpmailer6.8.1/src/PHPMailer.php';
+// require 'phpmailer6.8.1/src/SMTP.php';
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
@@ -16,10 +19,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	$gemeente = htmlspecialchars($_POST["gemeente"]);
 	$postcode = htmlspecialchars($_POST["postcode"]);
 	$textarea = htmlspecialchars($_POST["message"]);
-	$onderwerp = "Bericht van " . $name . " in " . $gemeente .  " (via formulier)";
-	
-	date_default_timezone_set('Europe/Brussels');
-    $time = date('m/d/Y H:i');
+
+    if(empty($name) || empty($email) || empty($gemeente) || empty($postcode) || empty($textarea)) {
+
+        $data = [
+            "name" => empty($name),
+            "email" => empty($email),
+            "gemeente" => empty($gemeente),
+            "postcode" => empty($postcode),
+            "textarea" => empty($textarea)
+        ];
+
+        $form_error_message = urlencode(http_build_query($data));
+        // $form_error_message = http_build_query($data);
+
+
+        $_SESSION['error_message'] = $error_message; // store error message in session
+        header('Location: ' . $_SERVER['HTTP_REFERER'] . '?formerror=' . $form_error_message . '#contact'); // redirect back to the previous page
+        exit;
+     }     
+
+	$onderwerp = "Bericht van " . $name . " in " . $postcode . ", " .  $gemeente . " | (via formulier)";
+
 	// //CAPTCHA
 	// $response = $_POST["g-recaptcha-response"];
 	// $url = 'https://www.google.com/recaptcha/api/siteverify';
@@ -45,9 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	$mail->FromName = $name;
 
 	//To address and name
-	$mail->addAddress("info@poortcentrum.be", "Eugeen Bosmans");
-    $mail->addBCC("poortcentrum@lavrenov.io", "poortcentrum@lavrenov.io");
-
+	$mail->addAddress("andrei@lavrenov.io", "Andrei Lavrenov");
 
 	//Address to which recipient will reply
 	$mail->addReplyTo($email, $name);
@@ -61,25 +80,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 	$mail->Subject = $onderwerp;
 	$mail->Body = "<p>$textarea</p>
-					<p>
-					    Persoon: $name<br/>
-    					Email: $email<br/>
-    					Locatie:  $postcode | $gemeente<br/>
-    					Tijd: $time<br/>
-					</p>";
-	$mail->AltBody = "$textarea \n| van $name in $postcode $gemeente, via $email om $time";
+					<p>Persoon: $name<br/>
+					Email: $email<br/>
+					Tijd: " . date('m/d/Y h:i') . "<br/>
+					Locatie: $gemeente | $postcode</p>";
+	$mail->AltBody = "$textarea | van: $name, via $email op " . date('m/d/Y h:i');
 
 	try {
-		$mail->send();
-		// header('Location: ../bevestiging/verzonden');
-		// echo "Message has been sent successfully";
+        if(empty($onderwerp)) {
+            throw new Exception('Er is geen onderwerp.');
+        }
+        if(!empty($mail->Subject)) {
+            echo($mail->Subject);
+            $mail->send();
+            // throw new Exception('Er is geen onderwerp.');
+        }
+
+		// $mail->send();
 
 		$confirmation__header = "VERZONDEN";
 		$confirmation__title = "BEDANKT";
 		$confirmation__message = "Wij contacteren u zo snel mogelijk terug.";
 	} catch (Exception $e) {
 		$error = $mail->ErrorInfo;
-		// header('Location: ../bevestiging/mislukt');
 
 		$confirmation__header = "MISLUKT";
 		$confirmation__title = "SORRY";

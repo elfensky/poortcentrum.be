@@ -1,97 +1,110 @@
-.c-contact{
-    
-    &__texture{
+.c-contact {
+    &__texture {
         background-image: url(../img/home/contact.png);
     }
 
-    &__floater{
+    &__floater {
         background-color: white;
         background-position: center;
         background-size: cover;
         transition: 1s;
     }
 
-    &__floater{
+    &__floater {
         padding: 2rem;
 
         display: flex;
         flex-direction: column;
     }
 
-    &__line{
+    &__line {
         margin: 1rem 0 1.6rem 0;
     }
-    &__form{
-        display:flex;
+    &__form {
+        display: flex;
         flex-direction: column;
         justify-content: space-between;
         flex-grow: 1;
-		
-		&__section{
-			display:flex; 
-			flex-direction: row;
-			justify-content: space-between;
-		}
 
-        &__input{
+        &__errorlist {
+            background-color: red !important;
+            color: white !important;
+            margin-bottom: 1rem !important;
+            list-style: decimal !important;
+            list-style-position: inside !important;
+
+            &__item {
+                padding: 1rem !important;
+                &:nth-child(odd) {
+                    margin-top: 0.5rem !important;
+                }
+            }
+        }
+
+        &__section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__input {
             border: none;
             background-color: #eee;
             padding: 0.25rem;
             margin-bottom: 1rem;
-			// flex-grow: 1;
-			
-			&--medium {
-				width: 60%;
-			}
+            // flex-grow: 1;
 
-			&--short {
-				width: 35%;
-			}
+            &--medium {
+                width: 60%;
+            }
+
+            &--short {
+                width: 35%;
+            }
         }
 
-        &__textarea{
+        &__textarea {
             min-height: 150px;
         }
 
-        &__submit{
+        &__submit {
             background-color: $color-secondary;
             border: none;
             color: white;
             padding: 0.25rem;
 
-            &:active{
+            &:active {
                 background-color: $color-primary;
             }
         }
 
-        select{
+        select {
             background-color: #eee;
             box-shadow: none;
             inset: none;
             border: none;
             // border: 1px solid #eaeaea;
         }
-        
-        textarea{
+
+        textarea {
             font-size: 1rem;
         }
     }
 
-
-    &__right{
-        &__line{
+    &__right {
+        &__line {
             display: none;
         }
 
-        &__info{
-            &__section{
+        &__info {
+            &__section {
                 text-align: flex-end;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: flex-end;
                 // margin-bottom: 2rem;
-                &__text{
+                &__text {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
@@ -100,11 +113,13 @@
                     text-transform: none;
                     font-weight: 400;
 
-                    &:hover{
+                    &:hover {
                         color: $color-secondary;
                     }
 
-                    i{font-size: 2rem;}
+                    i {
+                        font-size: 2rem;
+                    }
                 }
             }
         }
@@ -112,18 +127,17 @@
 }
 
 @include for-phone-only {
-    .c-contact{
-
-        &__left{
+    .c-contact {
+        &__left {
             width: 100%;
         }
 
-        &__floater{
-            min-height: floater-height($floater-width--mobile);
-            
+        &__floater {
+            // min-height: floater-height($floater-width--mobile);
+            min-height: fit-content;
         }
 
-        &__right{
+        &__right {
             width: 100%;
 
             margin-bottom: 60px;
@@ -132,26 +146,25 @@
             flex-direction: row;
             justify-content: space-between;
 
-            &__social{
+            &__social {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
 
                 min-height: 180px;
-                
-                
-                &__icon{
+
+                &__icon {
                     font-size: 2rem;
                     color: white;
                     transition: 0.3s;
 
-                    &:hover{
+                    &:hover {
                         color: $color-secondary;
                     }
                 }
             }
 
-            &__info{
+            &__info {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
@@ -159,20 +172,18 @@
 
                 text-align: right;
 
-                &__section{
-
-                    &__text{
+                &__section {
+                    &__text {
                         font-size: 1.2rem !important;
                         line-height: 1;
                         color: white;
-                        
                     }
 
-                    &__icon{
+                    &__icon {
                         color: white;
                         margin-left: 1rem;
                         font-size: 2rem;
-                        &:hover{
+                        &:hover {
                             color: $color-secondary;
                         }
                     }
@@ -183,19 +194,19 @@
 }
 
 @include for-tablet-portrait-up {
-    .c-contact{
-
-        &__left{
+    .c-contact {
+        &__left {
             width: 100%;
         }
 
-        &__floater{
+        &__floater {
             // min-height: floater-height($floater-width--mobile);
             width: $floater-width--desktop;
-            height: floater-height($floater-width--desktop);
+            // height: floater-height($floater-width--desktop);
+            height: fit-content;
         }
 
-        &__right{
+        &__right {
             width: 100%;
             margin-bottom: 60px;
 
@@ -204,45 +215,43 @@
             // align-items: flex-end;
             justify-content: space-between;
 
-            &__social{
+            &__social {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
 
                 min-height: 180px;
 
-                &__icon{
+                &__icon {
                     font-size: 2rem;
                     color: white;
                     transition: 0.3s;
 
-                    &:hover{
+                    &:hover {
                         color: $color-secondary;
                     }
                 }
             }
 
-            &__info{
+            &__info {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
                 justify-content: space-between;
                 text-align: right;
 
-                &__section{
-
-                    &__text{
+                &__section {
+                    &__text {
                         font-size: 1.2rem !important;
                         line-height: 1;
                         color: white;
-                        
                     }
 
-                    &__icon{
+                    &__icon {
                         color: white;
                         margin-left: 1rem;
                         font-size: 2rem;
-                        &:hover{
+                        &:hover {
                             color: $color-secondary;
                         }
                     }
@@ -252,19 +261,20 @@
     }
 }
 
-@include for-tablet-landscape-up{
-    .c-contact{
+@include for-tablet-landscape-up {
+    .c-contact {
         //LEFT SECTION
-        &__left{
+        &__left {
             width: 50%;
             display: flex;
             justify-content: flex-end;
         }
 
         //RIGHT SECTION
-        &__right{
+        &__right {
             width: 50%;
             height: floater-height($floater-width--mobile);
+            // height: fit-content;
 
             margin-bottom: 0;
             text-align: right;
@@ -274,11 +284,11 @@
             align-items: flex-end;
             justify-content: space-between;
 
-            &__line{
+            &__line {
                 display: block;
             }
 
-            &__social{
+            &__social {
                 display: flex;
                 flex-direction: column;
                 width: 100px;
@@ -288,7 +298,7 @@
                 justify-content: space-between;
             }
 
-            &__info{
+            &__info {
                 margin-top: 45px;
                 // width: min-content;
                 flex-grow: 0.4;
@@ -298,17 +308,16 @@
                 // border-top: 2px solid $color-secondary;
                 // padding-top: 2rem;
 
-                &__section{
-
-                    &__text{
+                &__section {
+                    &__text {
                         color: white;
                     }
 
-                    &__icon{
+                    &__icon {
                         color: white;
                         // font-size: 2rem;
                         // margin-bottom: 2rem;
-                        margin-left: 1rem; 
+                        margin-left: 1rem;
                     }
                 }
             }
@@ -316,42 +325,43 @@
     }
 }
 
-@include for-desktop-up{
-    .c-contact{
+@include for-desktop-up {
+    .c-contact {
         // min-height: 90vh;
 
-        &__floater{
+        &__floater {
             width: $floater-width--desktop;
-            height: floater-height($floater-width--desktop);
+            // height: floater-height($floater-width--desktop);
+            height: fit-content;
         }
 
-        &__right{
+        &__right {
             height: floater-height($floater-width--desktop);
             margin-bottom: 0;
 
-            &__social{
-                &__icon{
+            &__social {
+                &__icon {
                     font-size: 3rem;
                 }
             }
 
-            &__info{
-                &__section{
-                    &__text{
+            &__info {
+                &__section {
+                    &__text {
                         font-size: 1rem;
                     }
-                    &__icon{
+                    &__icon {
                         font-size: 2rem;
                     }
                 }
             }
         }
-        &__form{
-            &__input{
+        &__form {
+            &__input {
                 font-size: 1.2rem;
                 padding: 0.25rem;
             }
-            &__submit{
+            &__submit {
                 font-size: 1.2rem;
                 padding: 0.25rem;
             }
