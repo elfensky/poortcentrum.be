@@ -1,16 +1,14 @@
 <?php
+// require 'phpmailer6.1.7/src/Exception.php';
+// require 'phpmailer6.1.7/src/PHPMailer.php';
+// require 'phpmailer6.1.7/src/SMTP.php';
+
+require 'phpmailer6.8.1/src/Exception.php';
+require 'phpmailer6.8.1/src/PHPMailer.php';
+require 'phpmailer6.8.1/src/SMTP.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-
-require 'phpmailer6.1.7/src/Exception.php';
-require 'phpmailer6.1.7/src/PHPMailer.php';
-require 'phpmailer6.1.7/src/SMTP.php';
-
-// require 'phpmailer6.8.1/src/Exception.php';
-// require 'phpmailer6.8.1/src/PHPMailer.php';
-// require 'phpmailer6.8.1/src/SMTP.php';
-
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
@@ -30,8 +28,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             "textarea" => empty($textarea)
         ];
 
-        $form_error_message = urlencode(http_build_query($data));
-        // $form_error_message = http_build_query($data);
+        // $form_error_message = urlencode(http_build_query($data));
+        $form_error_message = http_build_query($data);
 
 
         $_SESSION['error_message'] = $error_message; // store error message in session
@@ -39,7 +37,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
      }     
 
-	$onderwerp = "Bericht van " . $name . " in " . $postcode . ", " .  $gemeente . " | (via formulier)";
 
 	// //CAPTCHA
 	// $response = $_POST["g-recaptcha-response"];
@@ -78,25 +75,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	//Send HTML or Plain Text email
 	$mail->isHTML(true);
 
-	$mail->Subject = $onderwerp;
+	$mail->Subject = "Bericht van " . preg_replace('/[0-9]+/', '', $name) . " in " .  preg_replace('/[0-9]+/', '', $gemeente) . " (via formulier)";
 	$mail->Body = "<p>$textarea</p>
 					<p>Persoon: $name<br/>
 					Email: $email<br/>
 					Tijd: " . date('m/d/Y h:i') . "<br/>
-					Locatie: $gemeente | $postcode</p>";
+					Locatie: $postcode | $gemeente </p>";
 	$mail->AltBody = "$textarea | van: $name, via $email op " . date('m/d/Y h:i');
 
 	try {
-        if(empty($onderwerp)) {
-            throw new Exception('Er is geen onderwerp.');
-        }
-        if(!empty($mail->Subject)) {
-            echo($mail->Subject);
-            $mail->send();
-            // throw new Exception('Er is geen onderwerp.');
-        }
-
-		// $mail->send();
+		$mail->send();
 
 		$confirmation__header = "VERZONDEN";
 		$confirmation__title = "BEDANKT";

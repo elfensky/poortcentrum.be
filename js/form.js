@@ -121,6 +121,7 @@ form.addEventListener('submit', function (event) {
         form.reportValidity()
         // Prevent the form from submitting by default
         event.preventDefault()
+        window.location.hash = 'contact'
     }
 })
 
