@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 	//To address and name
     $mail->addAddress("info@poortcentrum.be", "Eugeen Bosmans");
-    $mail->addBCC("poortcentrum@lavrenov.io", "Andrei Lavrenov");
+    // $mail->addBCC("poortcentrum@lavrenov.io", "Andrei Lavrenov");
 
 	//Address to which recipient will reply
 	$mail->addReplyTo($email, $name);
